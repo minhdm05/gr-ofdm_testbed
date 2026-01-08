@@ -1,0 +1,37 @@
+id: ofdm_testbed_ber
+label: BER Calculator
+category: '[OFDM Testbed]'
+
+templates:
+  imports: from gnuradio import ofdm_testbed
+  make: ofdm_testbed.ber(${avg_len}, ${enable_output})
+
+parameters:
+- id: avg_len
+  label: Average Length
+  dtype: int
+  default: 1000000
+  
+  setter: set_avg_len(${avg_len}) 
+
+- id: enable_output
+  label: Enable Output
+  dtype: bool
+  default: false
+ 
+
+inputs:
+- label: Reference
+  domain: stream
+  dtype: byte
+- label: Received
+  domain: stream
+  dtype: byte
+
+outputs:
+- label: BER
+  domain: stream
+  dtype: float
+  optional: true
+
+file_format: 1
