@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1ofdm__testbed_1_1bpsk__demapper" kind="class" language="C++" prot="public">
+    <compoundname>gr::ofdm_testbed::bpsk_demapper</compoundname>
+    <basecompoundref prot="public" virt="virtual">gr::block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl" prot="public" virt="non-virtual">gr::ofdm_testbed::bpsk_demapper_impl</derivedcompoundref>
+    <includes refid="bpsk__demapper_8h" local="no">bpsk_demapper.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper_1a71ecdfef867ed4242ac619a4af904e2d" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper" kindref="compound">bpsk_demapper</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;bpsk_demapper&gt; gr::ofdm_testbed::bpsk_demapper::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/bpsk_demapper.h" line="24" column="33" bodyfile="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/bpsk_demapper.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper_1a8285d32eff24a4fff22d072d5a2e40ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper_1a71ecdfef867ed4242ac619a4af904e2d" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::ofdm_testbed::bpsk_demapper::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper" kindref="compound">ofdm_testbed::bpsk_demapper</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/bpsk_demapper.h" line="29" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BPSK Demapper: Converts BPSK symbols (complex) to bits/bytes (1 byte output per 8 complex inputs). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::block</label>
+      </node>
+      <node id="1">
+        <label>gr::ofdm_testbed::bpsk_demapper</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::ofdm_testbed::bpsk_demapper_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::block</label>
+      </node>
+      <node id="1">
+        <label>gr::ofdm_testbed::bpsk_demapper</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/bpsk_demapper.h" line="21" column="5" bodyfile="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/bpsk_demapper.h" bodystart="22" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper_1a8285d32eff24a4fff22d072d5a2e40ef" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper</scope><name>make</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper_1a71ecdfef867ed4242ac619a4af904e2d" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

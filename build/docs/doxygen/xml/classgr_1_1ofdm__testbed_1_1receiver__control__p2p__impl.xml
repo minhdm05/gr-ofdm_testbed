@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::ofdm_testbed::receiver_control_p2p_impl</compoundname>
+    <basecompoundref refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p" prot="public" virt="non-virtual">gr::ofdm_testbed::receiver_control_p2p</basecompoundref>
+    <includes refid="receiver__control__p2p__impl_8h" local="no">receiver_control_p2p_impl.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757" prot="private" static="no" strong="no">
+        <type></type>
+        <name>state_rx</name>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757aaf28d313681fa86e2e432083f128a435" prot="private">
+          <name>ST_IDLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757aca9656daa4ba3d2e031af45b26dc7570" prot="private">
+          <name>ST_CHECK_TRANSMITTER_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757a638df956b8d72f10972e4a6674c3ceeb" prot="private">
+          <name>ST_CHECK_PACKET_NO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757a0aea61a30c4312d0c66611920dc8faaf" prot="private">
+          <name>ST_GET_DATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757a757c33f53e2875413dbd4840cbe29d63" prot="private">
+          <name>ST_CHECK_END_PACKET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="14" column="9" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1" prot="private" static="no" strong="no">
+        <type></type>
+        <name>state_tx</name>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1a452f4a935ed9978243065692a5cd4b31" prot="private">
+          <name>ST_HEADER_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1af32dc2b2de2c01cf7606c202c2e2ff46" prot="private">
+          <name>ST_SESSION_REQUEST_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1a0ba61e2ce6ee326ec41b73427f89f24a" prot="private">
+          <name>ST_CHECK_PACKET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1afffcf640027cc50cb7029d92648c4f43" prot="private">
+          <name>ST_CONFIRM_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1a0634efd887f1f693af304d7651cc2106" prot="private">
+          <name>ST_CHECK_DATA_OUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1ab8e30d83ad362e5aafad4005233ccf8d" prot="private">
+          <name>ST_RECVED_DATA_OUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="22" column="9" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="23" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a38c8731566fee2d0f41db35bfdbc61f1" prot="private" static="no" mutable="no">
+        <type>state_tx</type>
+        <definition>state_tx gr::ofdm_testbed::receiver_control_p2p_impl::d_tx_state</definition>
+        <argsstring></argsstring>
+        <name>d_tx_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="33" column="18" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3a654034d428eb4df13028dce87606b0" prot="private" static="no" mutable="no">
+        <type>state_rx</type>
+        <definition>state_rx gr::ofdm_testbed::receiver_control_p2p_impl::d_rx_state</definition>
+        <argsstring></argsstring>
+        <name>d_rx_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="34" column="18" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ab57d63234b52ed804d6aa0815f573ff6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_packet_size</definition>
+        <argsstring></argsstring>
+        <name>d_packet_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="36" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a83768437790a53d5885f70c143c0079e" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::receiver_control_p2p_impl::d_transmitter_id</definition>
+        <argsstring></argsstring>
+        <name>d_transmitter_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="37" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a02f13b190bfbcb6cd0ab30fd026b5aac" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::receiver_control_p2p_impl::d_receiver_id</definition>
+        <argsstring></argsstring>
+        <name>d_receiver_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="38" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a49bf81bf8871ac92ac987ed49cbf3c8b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>d_buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="40" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ab06d2bdfbaa7b6f65bcef612489335f2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_curr_part</definition>
+        <argsstring></argsstring>
+        <name>d_curr_part</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="41" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1abc73bec0c687f1197dc718d9bfa41f8c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_check_transmitter_id_index</definition>
+        <argsstring></argsstring>
+        <name>d_check_transmitter_id_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="43" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a48a8b99b46da538686dbe24135f126f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_check_transmitter_id_count</definition>
+        <argsstring></argsstring>
+        <name>d_check_transmitter_id_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="44" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a209b29f71c1b25281c3708aa3c235564" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_check_recv_packet_number_index</definition>
+        <argsstring></argsstring>
+        <name>d_check_recv_packet_number_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="45" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aa377976b8bc92e2938d3bc7a8bed1a82" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::receiver_control_p2p_impl::d_rx_pkt_no</definition>
+        <argsstring></argsstring>
+        <name>d_rx_pkt_no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="47" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a264a1023fd23e0b20fc84dd28c768239" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_data_index</definition>
+        <argsstring></argsstring>
+        <name>d_data_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="48" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1afa95685d1183ede5ef4e176bb2e6510f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_check_end_packet_count</definition>
+        <argsstring></argsstring>
+        <name>d_check_end_packet_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="49" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1acfee9e3b36f0a52d9aa0a81f1ddac03e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_check_end_packet_index</definition>
+        <argsstring></argsstring>
+        <name>d_check_end_packet_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="50" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aad3e35c5cd8e394e35eb40993887b96b" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::receiver_control_p2p_impl::d_next_out_packet_no</definition>
+        <argsstring></argsstring>
+        <name>d_next_out_packet_no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="52" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a25168f0a83cf807f53ce06ffa01a5f8e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_confirm_index</definition>
+        <argsstring></argsstring>
+        <name>d_confirm_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="53" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1afc23b13ee09b717b02b53de8505264b8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_pkt_no_confirm_index</definition>
+        <argsstring></argsstring>
+        <name>d_pkt_no_confirm_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="54" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a42f32fd7e827d88cce0f6fa39128471e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_count_recvd_packet</definition>
+        <argsstring></argsstring>
+        <name>d_count_recvd_packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="55" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a2410c02af9aaf05dbce81b0c0eb80b89" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_data_out_index</definition>
+        <argsstring></argsstring>
+        <name>d_data_out_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="57" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a2753b4bf17f3e05614c2138ea7049b7c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::ofdm_testbed::receiver_control_p2p_impl::d_recv_packet</definition>
+        <argsstring></argsstring>
+        <name>d_recv_packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="58" column="14" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1adb0b3b6afc0e18e368659de4dd841a99" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_header_index</definition>
+        <argsstring></argsstring>
+        <name>d_header_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="59" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a1047102d83b881425a8f0aa5c0a5c693" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::d_session_request_index</definition>
+        <argsstring></argsstring>
+        <name>d_session_request_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="60" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a90889cfd11e7d940d07c8f2ad5536f9d" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::receiver_control_p2p_impl::d_session_no</definition>
+        <argsstring></argsstring>
+        <name>d_session_no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="62" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1abb5521a74a44ac2e72aa09f487fa06ac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::ofdm_testbed::receiver_control_p2p_impl::d_session_request_trans</definition>
+        <argsstring></argsstring>
+        <name>d_session_request_trans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="63" column="14" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1af46f45b1dcfcc4e2dd389edea2084bd0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::ofdm_testbed::receiver_control_p2p_impl::d_data_out</definition>
+        <argsstring></argsstring>
+        <name>d_data_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="65" column="14" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a8650e52894791e1d214f0f59d460b2b9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::ofdm_testbed::receiver_control_p2p_impl::d_data_out_full</definition>
+        <argsstring></argsstring>
+        <name>d_data_out_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="66" column="14" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1af70573cf46054d9d37ee96e42b252cdd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::ofdm_testbed::receiver_control_p2p_impl::d_received_data_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_received_data_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="68" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a7704d81c7726ab075873b215f7555ee9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::ofdm_testbed::receiver_control_p2p_impl::d_received_packet_number_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_received_packet_number_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="69" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aface101f44eb23c586c907ab7cc23acf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::ofdm_testbed::receiver_control_p2p_impl::d_rx_packet</definition>
+        <argsstring></argsstring>
+        <name>d_rx_packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="70" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a91401b8b14b624d453d7d440b2002b4f" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::receiver_control_p2p_impl::d_rx_packet_number[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>d_rx_packet_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="71" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ae5da83d00b5e6a906f1a255608870fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::receiver_control_p2p_impl::receiver_control_p2p_impl</definition>
+        <argsstring>(int packet_size, int transmitter_id, int receiver_id)</argsstring>
+        <name>receiver_control_p2p_impl</name>
+        <param>
+          <type>int</type>
+          <declname>packet_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>transmitter_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>receiver_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="74" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ae2819d212e336311c6191dd7cf395370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::receiver_control_p2p_impl::~receiver_control_p2p_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~receiver_control_p2p_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="75" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a90fa2d3848782e9318717a419cb3d945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::ofdm_testbed::receiver_control_p2p_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required) override</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="77" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a211f9aeadf3877cb3e6f92a8aa29b9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::receiver_control_p2p_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items) override</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="79" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::ofdm_testbed::receiver_control_p2p</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::ofdm_testbed::receiver_control_p2p_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::ofdm_testbed::receiver_control_p2p</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::ofdm_testbed::receiver_control_p2p_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" line="11" column="5" bodyfile="/home/minh/gr-ofdm_testbed/lib/receiver_control_p2p_impl.h" bodystart="12" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a49bf81bf8871ac92ac987ed49cbf3c8b" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_buffer_size</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1afa95685d1183ede5ef4e176bb2e6510f" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_check_end_packet_count</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1acfee9e3b36f0a52d9aa0a81f1ddac03e" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_check_end_packet_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a209b29f71c1b25281c3708aa3c235564" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_check_recv_packet_number_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a48a8b99b46da538686dbe24135f126f6" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_check_transmitter_id_count</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1abc73bec0c687f1197dc718d9bfa41f8c" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_check_transmitter_id_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a25168f0a83cf807f53ce06ffa01a5f8e" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_confirm_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a42f32fd7e827d88cce0f6fa39128471e" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_count_recvd_packet</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ab06d2bdfbaa7b6f65bcef612489335f2" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_curr_part</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a264a1023fd23e0b20fc84dd28c768239" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_data_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1af46f45b1dcfcc4e2dd389edea2084bd0" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_data_out</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a8650e52894791e1d214f0f59d460b2b9" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_data_out_full</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a2410c02af9aaf05dbce81b0c0eb80b89" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_data_out_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1adb0b3b6afc0e18e368659de4dd841a99" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_header_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aad3e35c5cd8e394e35eb40993887b96b" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_next_out_packet_no</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ab57d63234b52ed804d6aa0815f573ff6" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_packet_size</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1afc23b13ee09b717b02b53de8505264b8" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_pkt_no_confirm_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1af70573cf46054d9d37ee96e42b252cdd" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_received_data_buffer</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a7704d81c7726ab075873b215f7555ee9" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_received_packet_number_buffer</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a02f13b190bfbcb6cd0ab30fd026b5aac" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_receiver_id</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a2753b4bf17f3e05614c2138ea7049b7c" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_recv_packet</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aface101f44eb23c586c907ab7cc23acf" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_rx_packet</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a91401b8b14b624d453d7d440b2002b4f" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_rx_packet_number</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aa377976b8bc92e2938d3bc7a8bed1a82" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_rx_pkt_no</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3a654034d428eb4df13028dce87606b0" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_rx_state</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a90889cfd11e7d940d07c8f2ad5536f9d" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_session_no</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a1047102d83b881425a8f0aa5c0a5c693" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_session_request_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1abb5521a74a44ac2e72aa09f487fa06ac" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_session_request_trans</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a83768437790a53d5885f70c143c0079e" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_transmitter_id</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a38c8731566fee2d0f41db35bfdbc61f1" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>d_tx_state</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a90fa2d3848782e9318717a419cb3d945" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a211f9aeadf3877cb3e6f92a8aa29b9f0" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p_1aa475735ba88d115d3abf02c1661468f1" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ae5da83d00b5e6a906f1a255608870fc0" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>receiver_control_p2p_impl</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p_1a6cc6e0620b581e42491385b23370c9d7" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1a0634efd887f1f693af304d7651cc2106" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_CHECK_DATA_OUT</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757a757c33f53e2875413dbd4840cbe29d63" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_CHECK_END_PACKET</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1a0ba61e2ce6ee326ec41b73427f89f24a" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_CHECK_PACKET</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757a638df956b8d72f10972e4a6674c3ceeb" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_CHECK_PACKET_NO</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757aca9656daa4ba3d2e031af45b26dc7570" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_CHECK_TRANSMITTER_ID</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1afffcf640027cc50cb7029d92648c4f43" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_CONFIRM_TRANS</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757a0aea61a30c4312d0c66611920dc8faaf" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_GET_DATA</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1a452f4a935ed9978243065692a5cd4b31" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_HEADER_TRANS</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757aaf28d313681fa86e2e432083f128a435" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_IDLE</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1ab8e30d83ad362e5aafad4005233ccf8d" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_RECVED_DATA_OUT</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1af32dc2b2de2c01cf7606c202c2e2ff46" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>ST_SESSION_REQUEST_TRANS</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1a3b8d9e84f8190feddaabd0c38598e757" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>state_rx</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1aeac6fff6556d49cc744d7afd314523f1" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>state_tx</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl_1ae2819d212e336311c6191dd7cf395370" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::receiver_control_p2p_impl</scope><name>~receiver_control_p2p_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

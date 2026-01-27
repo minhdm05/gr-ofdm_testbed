@@ -4,6 +4,13 @@
     <compoundname>lib</compoundname>
     <innerfile refid="ber__impl_8h">ber_impl.h</innerfile>
     <innerfile refid="ber__pattern__generator__impl_8h">ber_pattern_generator_impl.h</innerfile>
+    <innerfile refid="bpsk__demapper__impl_8h">bpsk_demapper_impl.h</innerfile>
+    <innerfile refid="bpsk__mapper__impl_8h">bpsk_mapper_impl.h</innerfile>
+    <innerfile refid="byte__to__bit__impl_8h">byte_to_bit_impl.h</innerfile>
+    <innerfile refid="image__vector__source__impl_8h">image_vector_source_impl.h</innerfile>
+    <innerfile refid="primary__tx__control__impl_8h">primary_tx_control_impl.h</innerfile>
+    <innerfile refid="receiver__control__p2p__impl_8h">receiver_control_p2p_impl.h</innerfile>
+    <innerfile refid="zero__elimination__impl_8h">zero_elimination_impl.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -4,6 +4,13 @@
     <compoundname>docstrings</compoundname>
     <innerfile refid="ber__pattern__generator__pydoc__template_8h">ber_pattern_generator_pydoc_template.h</innerfile>
     <innerfile refid="ber__pydoc__template_8h">ber_pydoc_template.h</innerfile>
+    <innerfile refid="bpsk__demapper__pydoc__template_8h">bpsk_demapper_pydoc_template.h</innerfile>
+    <innerfile refid="bpsk__mapper__pydoc__template_8h">bpsk_mapper_pydoc_template.h</innerfile>
+    <innerfile refid="byte__to__bit__pydoc__template_8h">byte_to_bit_pydoc_template.h</innerfile>
+    <innerfile refid="image__vector__source__pydoc__template_8h">image_vector_source_pydoc_template.h</innerfile>
+    <innerfile refid="primary__tx__control__pydoc__template_8h">primary_tx_control_pydoc_template.h</innerfile>
+    <innerfile refid="receiver__control__p2p__pydoc__template_8h">receiver_control_p2p_pydoc_template.h</innerfile>
+    <innerfile refid="zero__elimination__pydoc__template_8h">zero_elimination_pydoc_template.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

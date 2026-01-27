@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::ofdm_testbed::bpsk_demapper_impl</compoundname>
+    <basecompoundref refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper" prot="public" virt="non-virtual">gr::ofdm_testbed::bpsk_demapper</basecompoundref>
+    <includes refid="bpsk__demapper__impl_8h" local="no">bpsk_demapper_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a71ff6141bd5711c3f26803e665bf6365" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::bpsk_demapper_impl::d_i</definition>
+        <argsstring></argsstring>
+        <name>d_i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="19" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a5846f298e63c3e48bb2f0b98b0f62ee4" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char gr::ofdm_testbed::bpsk_demapper_impl::d_byte</definition>
+        <argsstring></argsstring>
+        <name>d_byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="20" column="14" bodyfile="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a77f7d6cb9384c395558b3d2cd132e155" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::bpsk_demapper_impl::d_one</definition>
+        <argsstring></argsstring>
+        <name>d_one</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="22" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a5f78172bab31c56e5815ace84c170148" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::bpsk_demapper_impl::d_zero</definition>
+        <argsstring></argsstring>
+        <name>d_zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="23" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a77046ec530851192a1505e2e87134be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::bpsk_demapper_impl::bpsk_demapper_impl</definition>
+        <argsstring>()</argsstring>
+        <name>bpsk_demapper_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="26" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1ade5e2f75034bb44114e88cfcc907b47e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::bpsk_demapper_impl::~bpsk_demapper_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~bpsk_demapper_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1aa32f13c41c6ad2cd1c5600c53feeaac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::ofdm_testbed::bpsk_demapper_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required) override</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="30" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a4e8d457f6459ffac1f87d872d0d4cb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::bpsk_demapper_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_v, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items) override</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_v</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="32" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::bpsk_demapper</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::ofdm_testbed::bpsk_demapper_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::bpsk_demapper</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::ofdm_testbed::bpsk_demapper_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" line="16" column="5" bodyfile="/home/minh/gr-ofdm_testbed/lib/bpsk_demapper_impl.h" bodystart="17" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a77046ec530851192a1505e2e87134be8" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>bpsk_demapper_impl</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a5846f298e63c3e48bb2f0b98b0f62ee4" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>d_byte</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a71ff6141bd5711c3f26803e665bf6365" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>d_i</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a77f7d6cb9384c395558b3d2cd132e155" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>d_one</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a5f78172bab31c56e5815ace84c170148" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>d_zero</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1aa32f13c41c6ad2cd1c5600c53feeaac0" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1a4e8d457f6459ffac1f87d872d0d4cb2e" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper_1a8285d32eff24a4fff22d072d5a2e40ef" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper_1a71ecdfef867ed4242ac619a4af904e2d" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl_1ade5e2f75034bb44114e88cfcc907b47e" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_demapper_impl</scope><name>~bpsk_demapper_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::ofdm_testbed::bpsk_mapper_impl</compoundname>
+    <basecompoundref refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper" prot="public" virt="non-virtual">gr::ofdm_testbed::bpsk_mapper</basecompoundref>
+    <includes refid="bpsk__mapper__impl_8h" local="no">bpsk_mapper_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1aa73a49b101c34b369b0ef314f56fee89" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::ofdm_testbed::bpsk_mapper_impl::d_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" line="20" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1a5cdb7df042d3cf60e1b442a68a437f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::bpsk_mapper_impl::bpsk_mapper_impl</definition>
+        <argsstring>()</argsstring>
+        <name>bpsk_mapper_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" line="23" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1a27fc453a6535538201df3fbafb8f9308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::bpsk_mapper_impl::~bpsk_mapper_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~bpsk_mapper_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" line="24" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1a96fadc774d5f5cf6e7c3bebf7a615702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::ofdm_testbed::bpsk_mapper_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required) override</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" line="26" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1af07e4cd664b0c681dae51bcb9f16099a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::bpsk_mapper_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_v, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items) override</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_v</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" line="28" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::ofdm_testbed::bpsk_mapper_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::bpsk_mapper</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::ofdm_testbed::bpsk_mapper_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::bpsk_mapper</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" line="17" column="5" bodyfile="/home/minh/gr-ofdm_testbed/lib/bpsk_mapper_impl.h" bodystart="18" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1a5cdb7df042d3cf60e1b442a68a437f53" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_mapper_impl</scope><name>bpsk_mapper_impl</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1aa73a49b101c34b369b0ef314f56fee89" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_mapper_impl</scope><name>d_symbols</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1a96fadc774d5f5cf6e7c3bebf7a615702" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_mapper_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1af07e4cd664b0c681dae51bcb9f16099a" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_mapper_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper_1af0609bce1ab7f8327b79a9e5f3171897" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_mapper_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper_1a42ef26711a93edcd277766fae4c29408" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_mapper_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl_1a27fc453a6535538201df3fbafb8f9308" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::bpsk_mapper_impl</scope><name>~bpsk_mapper_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

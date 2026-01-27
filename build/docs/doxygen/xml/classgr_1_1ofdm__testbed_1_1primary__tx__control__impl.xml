@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::ofdm_testbed::primary_tx_control_impl</compoundname>
+    <basecompoundref refid="classgr_1_1ofdm__testbed_1_1primary__tx__control" prot="public" virt="non-virtual">gr::ofdm_testbed::primary_tx_control</basecompoundref>
+    <includes refid="primary__tx__control__impl_8h" local="no">primary_tx_control_impl.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61" prot="private" static="no" strong="no">
+        <type></type>
+        <name>state_tx</name>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61a62ad8f70853650d1318bc0af1a409964" prot="private">
+          <name>ST_WAIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61add2b69247188bb9b1b68a096825e8d43" prot="private">
+          <name>ST_BUFFER_MANAGEMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61ad509f7bf70c0e8693671e847017603ee" prot="private">
+          <name>ST_TRANSMITTER_ID_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61aa5f5a9f02f3d2b0992494bcad1282735" prot="private">
+          <name>ST_PACKET_NO_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61a341d3248cd782c40a0dc5cc761518bd5" prot="private">
+          <name>ST_DATA_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61a4d2f4bb78ab567f72ca2997df0a8162c" prot="private">
+          <name>ST_GUARD_INTERVAL_TRANS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="20" column="9" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a55094f995b8f0c1230a799075f25bf7d" prot="private" static="no" strong="no">
+        <type></type>
+        <name>state_rx</name>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a55094f995b8f0c1230a799075f25bf7da701690ca51391bc93db7cd6b32a4e11d" prot="private">
+          <name>ST_RECEIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a55094f995b8f0c1230a799075f25bf7da95aca0adc014b66b8e402c0e12196b24" prot="private">
+          <name>ST_CHECK_SESSION_NUMBER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="28" column="9" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1adfdbf003fd4508422499372f628d1b78" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_packet_size</definition>
+        <argsstring></argsstring>
+        <name>d_packet_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="33" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2a2b4d65962e0543845c920f69f45c35" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_guard_interval</definition>
+        <argsstring></argsstring>
+        <name>d_guard_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="34" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad7b2adfcd1467c614c5f3298fca96792" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_transmitter_id</definition>
+        <argsstring></argsstring>
+        <name>d_transmitter_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="35" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a0d54a02ca2cda708355a1604982aee1a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_receiver_id</definition>
+        <argsstring></argsstring>
+        <name>d_receiver_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="36" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a52988b411d7730d730f41d27e9d526d6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_ack_burst_size</definition>
+        <argsstring></argsstring>
+        <name>d_ack_burst_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="37" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1aacb78663c2ada6d3d7f924b248c69482" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_buffer_size</definition>
+        <argsstring></argsstring>
+        <name>d_buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="39" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a383cd4761b15f117d45dd5b169bb4ff8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_load_packet_index</definition>
+        <argsstring></argsstring>
+        <name>d_load_packet_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="41" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a3364761a486f1ecd5304420b190ba707" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_load_data_index</definition>
+        <argsstring></argsstring>
+        <name>d_load_data_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="42" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a006262a4be83f52b65c33b9d959e30c2" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::primary_tx_control_impl::d_load_packet_number</definition>
+        <argsstring></argsstring>
+        <name>d_load_packet_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="43" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a7e5cabb3989fc68ba460a39335e3b8d6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::ofdm_testbed::primary_tx_control_impl::d_load_data</definition>
+        <argsstring></argsstring>
+        <name>d_load_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="44" column="14" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1aca4de20315d9564ea4b402f2c2bf7a1d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_tx_buffer_index</definition>
+        <argsstring></argsstring>
+        <name>d_tx_buffer_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="46" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2cc5c4d6eb7368795682d7e66f209c0f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_header_index</definition>
+        <argsstring></argsstring>
+        <name>d_header_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="47" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a8f8590f30bb7b93f62a96acdb9554eb4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_data_index</definition>
+        <argsstring></argsstring>
+        <name>d_data_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="48" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a64c1e144400dd6e62a0b158587d29790" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_guard_index</definition>
+        <argsstring></argsstring>
+        <name>d_guard_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="49" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2a53836fde2286e5ca757d4bd11aa33e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_check_rx_id_count</definition>
+        <argsstring></argsstring>
+        <name>d_check_rx_id_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="50" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad2384e253f706d3cb314fe1f06ace2ea" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_check_rx_id_index</definition>
+        <argsstring></argsstring>
+        <name>d_check_rx_id_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="51" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a32741fd5e18ef254e7dc3d1ccdbecb4b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_check_recv_packet_number_index</definition>
+        <argsstring></argsstring>
+        <name>d_check_recv_packet_number_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="52" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1af8103418e8decea5a73b3dd944f53117" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_number_of_session_packets</definition>
+        <argsstring></argsstring>
+        <name>d_number_of_session_packets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="53" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a22b2ca00927137c086083190af42c273" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::primary_tx_control_impl::d_expected_session_number</definition>
+        <argsstring></argsstring>
+        <name>d_expected_session_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="54" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1abbabd3874b2115c4440b6429e081cb92" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_check_session_index</definition>
+        <argsstring></argsstring>
+        <name>d_check_session_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="55" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad25d9519d59bd8bf8f4e6d5ceeda39af" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::d_check_session_count</definition>
+        <argsstring></argsstring>
+        <name>d_check_session_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="56" column="13" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a141cecb6b995a1cf77427e59b1566723" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::ofdm_testbed::primary_tx_control_impl::d_loaded_data</definition>
+        <argsstring></argsstring>
+        <name>d_loaded_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="58" column="14" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad694db759e421e0afa2d0963a1a99bf8" prot="private" static="no" mutable="no">
+        <type>state_tx</type>
+        <definition>state_tx gr::ofdm_testbed::primary_tx_control_impl::d_tx_state</definition>
+        <argsstring></argsstring>
+        <name>d_tx_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="59" column="18" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a751866d6c0e7ae8397800e46a6f42ee2" prot="private" static="no" mutable="no">
+        <type>state_rx</type>
+        <definition>state_rx gr::ofdm_testbed::primary_tx_control_impl::d_rx_state</definition>
+        <argsstring></argsstring>
+        <name>d_rx_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="60" column="18" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a6285f28c871bce3b31bad4806e2669f9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::ofdm_testbed::primary_tx_control_impl::d_transmitted_data_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_transmitted_data_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="62" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a553ee93c2bae27abd057976e94db5b59" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::ofdm_testbed::primary_tx_control_impl::d_loaded_packet_number</definition>
+        <argsstring></argsstring>
+        <name>d_loaded_packet_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="63" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a246cb46a47c0795e83a3f92e36ec4e19" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::ofdm_testbed::primary_tx_control_impl::d_transmitted_packet_number</definition>
+        <argsstring></argsstring>
+        <name>d_transmitted_packet_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="64" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a10dd8c94673a4663356cff080b152c05" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; gr::ofdm_testbed::primary_tx_control_impl::d_confirm_packet_number</definition>
+        <argsstring></argsstring>
+        <name>d_confirm_packet_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="65" column="21" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ac6445132ffcef50fb3378a7cd90b6bc1" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::ofdm_testbed::primary_tx_control_impl::d_rx_packet_number[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>d_rx_packet_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="67" column="23" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2652b678cb106a5bcf52888af3770645" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::ofdm_testbed::primary_tx_control_impl::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="69" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1af340831361079667409abde5fe55f8f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::primary_tx_control_impl::primary_tx_control_impl</definition>
+        <argsstring>(int packet_sz, int guard_interval, int source_id, int destination_id, int ack_burst_size)</argsstring>
+        <name>primary_tx_control_impl</name>
+        <param>
+          <type>int</type>
+          <declname>packet_sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>guard_interval</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>source_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>destination_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ack_burst_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="73" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a56f034b597cc0b21beb04337631ff3fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::primary_tx_control_impl::~primary_tx_control_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~primary_tx_control_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="74" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a5fe48ae67ed42a12e3de64e81dd472b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::ofdm_testbed::primary_tx_control_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required) override</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a88bd676f3a45678ba3c25008a6f36419" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::primary_tx_control_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_v, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items) override</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_v</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="78" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::ofdm_testbed::primary_tx_control_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::primary_tx_control</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1primary__tx__control"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::ofdm_testbed::primary_tx_control_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::primary_tx_control</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1primary__tx__control"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" line="17" column="5" bodyfile="/home/minh/gr-ofdm_testbed/lib/primary_tx_control_impl.h" bodystart="18" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a52988b411d7730d730f41d27e9d526d6" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_ack_burst_size</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1aacb78663c2ada6d3d7f924b248c69482" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_buffer_size</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a32741fd5e18ef254e7dc3d1ccdbecb4b" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_check_recv_packet_number_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2a53836fde2286e5ca757d4bd11aa33e" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_check_rx_id_count</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad2384e253f706d3cb314fe1f06ace2ea" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_check_rx_id_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad25d9519d59bd8bf8f4e6d5ceeda39af" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_check_session_count</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1abbabd3874b2115c4440b6429e081cb92" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_check_session_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a10dd8c94673a4663356cff080b152c05" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_confirm_packet_number</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a8f8590f30bb7b93f62a96acdb9554eb4" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_data_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a22b2ca00927137c086083190af42c273" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_expected_session_number</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a64c1e144400dd6e62a0b158587d29790" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_guard_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2a2b4d65962e0543845c920f69f45c35" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_guard_interval</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2cc5c4d6eb7368795682d7e66f209c0f" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_header_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a7e5cabb3989fc68ba460a39335e3b8d6" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_load_data</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a3364761a486f1ecd5304420b190ba707" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_load_data_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a383cd4761b15f117d45dd5b169bb4ff8" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_load_packet_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a006262a4be83f52b65c33b9d959e30c2" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_load_packet_number</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a141cecb6b995a1cf77427e59b1566723" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_loaded_data</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a553ee93c2bae27abd057976e94db5b59" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_loaded_packet_number</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1af8103418e8decea5a73b3dd944f53117" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_number_of_session_packets</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1adfdbf003fd4508422499372f628d1b78" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_packet_size</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a0d54a02ca2cda708355a1604982aee1a" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_receiver_id</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ac6445132ffcef50fb3378a7cd90b6bc1" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_rx_packet_number</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a751866d6c0e7ae8397800e46a6f42ee2" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_rx_state</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a6285f28c871bce3b31bad4806e2669f9" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_transmitted_data_buffer</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a246cb46a47c0795e83a3f92e36ec4e19" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_transmitted_packet_number</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad7b2adfcd1467c614c5f3298fca96792" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_transmitter_id</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1aca4de20315d9564ea4b402f2c2bf7a1d" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_tx_buffer_index</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1ad694db759e421e0afa2d0963a1a99bf8" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>d_tx_state</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a5fe48ae67ed42a12e3de64e81dd472b1" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a88bd676f3a45678ba3c25008a6f36419" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control_1ad5a36f7ed8bb3e6442187affe99df714" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1af340831361079667409abde5fe55f8f3" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>primary_tx_control_impl</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a2652b678cb106a5bcf52888af3770645" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>reset</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control_1a7a3ee92de4078ba392f5f231339584a2" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61add2b69247188bb9b1b68a096825e8d43" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_BUFFER_MANAGEMENT</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a55094f995b8f0c1230a799075f25bf7da95aca0adc014b66b8e402c0e12196b24" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_CHECK_SESSION_NUMBER</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61a341d3248cd782c40a0dc5cc761518bd5" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_DATA_TRANS</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61a4d2f4bb78ab567f72ca2997df0a8162c" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_GUARD_INTERVAL_TRANS</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61aa5f5a9f02f3d2b0992494bcad1282735" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_PACKET_NO_TRANS</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a55094f995b8f0c1230a799075f25bf7da701690ca51391bc93db7cd6b32a4e11d" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_RECEIVE</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61ad509f7bf70c0e8693671e847017603ee" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_TRANSMITTER_ID_TRANS</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61a62ad8f70853650d1318bc0af1a409964" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>ST_WAIT</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a55094f995b8f0c1230a799075f25bf7d" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>state_rx</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a46e6712f63cd1cdc476a5775e0efbc61" prot="private" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>state_tx</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl_1a56f034b597cc0b21beb04337631ff3fe" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::primary_tx_control_impl</scope><name>~primary_tx_control_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

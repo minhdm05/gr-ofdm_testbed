@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Free Software Foundation, Inc.
+ * Copyright 2026 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -16,7 +16,15 @@
 
 
  
- static const char *__doc_gr_ofdm_testbed_ber_pattern_generator = R"doc()doc";
+ static const char *__doc_gr_ofdm_testbed_ber_pattern_generator = R"doc(<+description of block+>
+
+Constructor Specific Documentation:
+
+
+
+Args:
+    error_rate : 
+    pattern_len : )doc";
 
 
  static const char *__doc_gr_ofdm_testbed_ber_pattern_generator_ber_pattern_generator_0 = R"doc()doc";
@@ -25,7 +33,15 @@
  static const char *__doc_gr_ofdm_testbed_ber_pattern_generator_ber_pattern_generator_1 = R"doc()doc";
 
 
- static const char *__doc_gr_ofdm_testbed_ber_pattern_generator_make = R"doc()doc";
+ static const char *__doc_gr_ofdm_testbed_ber_pattern_generator_make = R"doc(<+description of block+>
+
+Constructor Specific Documentation:
+
+
+
+Args:
+    error_rate : 
+    pattern_len : )doc";
 
 
  static const char *__doc_gr_ofdm_testbed_ber_pattern_generator_set_error_rate = R"doc()doc";

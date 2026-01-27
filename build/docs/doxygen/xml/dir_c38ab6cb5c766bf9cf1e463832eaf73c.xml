@@ -5,6 +5,13 @@
     <innerfile refid="api_8h">api.h</innerfile>
     <innerfile refid="ber_8h">ber.h</innerfile>
     <innerfile refid="ber__pattern__generator_8h">ber_pattern_generator.h</innerfile>
+    <innerfile refid="bpsk__demapper_8h">bpsk_demapper.h</innerfile>
+    <innerfile refid="bpsk__mapper_8h">bpsk_mapper.h</innerfile>
+    <innerfile refid="byte__to__bit_8h">byte_to_bit.h</innerfile>
+    <innerfile refid="image__vector__source_8h">image_vector_source.h</innerfile>
+    <innerfile refid="primary__tx__control_8h">primary_tx_control.h</innerfile>
+    <innerfile refid="receiver__control__p2p_8h">receiver_control_p2p.h</innerfile>
+    <innerfile refid="zero__elimination_8h">zero_elimination.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

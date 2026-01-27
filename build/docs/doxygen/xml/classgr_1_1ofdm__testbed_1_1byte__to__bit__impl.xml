@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::ofdm_testbed::byte_to_bit_impl</compoundname>
+    <basecompoundref refid="classgr_1_1ofdm__testbed_1_1byte__to__bit" prot="public" virt="non-virtual">gr::ofdm_testbed::byte_to_bit</basecompoundref>
+    <includes refid="byte__to__bit__impl_8h" local="no">byte_to_bit_impl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1ae5462cdaf14b269af08a25b2a1be1c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::byte_to_bit_impl::byte_to_bit_impl</definition>
+        <argsstring>()</argsstring>
+        <name>byte_to_bit_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/byte_to_bit_impl.h" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1a91566919172f688f25788a2d0924160f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ofdm_testbed::byte_to_bit_impl::~byte_to_bit_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~byte_to_bit_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/byte_to_bit_impl.h" line="21" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1aa59f1873e74ce62ea6acd6ff517620bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::ofdm_testbed::byte_to_bit_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required) override</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/byte_to_bit_impl.h" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1a82792b517b63eeab0ab3c245dbf2f8c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::ofdm_testbed::byte_to_bit_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_v, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items) override</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_v</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/lib/byte_to_bit_impl.h" line="26" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::ofdm_testbed::byte_to_bit_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::byte_to_bit</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1byte__to__bit"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::ofdm_testbed::byte_to_bit_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::ofdm_testbed::byte_to_bit</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1byte__to__bit"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/minh/gr-ofdm_testbed/lib/byte_to_bit_impl.h" line="17" column="5" bodyfile="/home/minh/gr-ofdm_testbed/lib/byte_to_bit_impl.h" bodystart="18" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1ae5462cdaf14b269af08a25b2a1be1c92" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::byte_to_bit_impl</scope><name>byte_to_bit_impl</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1aa59f1873e74ce62ea6acd6ff517620bd" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::byte_to_bit_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1a82792b517b63eeab0ab3c245dbf2f8c0" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::byte_to_bit_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1byte__to__bit_1a45c247619de06e98e293794adcc6c7af" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::byte_to_bit_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1byte__to__bit_1abc886963eb5ae84e79cbbd7db51ceb8a" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::byte_to_bit_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl_1a91566919172f688f25788a2d0924160f" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::byte_to_bit_impl</scope><name>~byte_to_bit_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

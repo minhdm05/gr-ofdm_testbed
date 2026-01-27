@@ -35,31 +35,12 @@
           <declname>pattern_len</declname>
         </param>
         <briefdescription>
-<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1ofdm__testbed_1_1ber__pattern__generator" kindref="compound">ofdm_testbed::ber_pattern_generator</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>error_rate</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>T? l? l?i bit (ví d? 0.1 cho 10%) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>pattern_len</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Ğ? dài chu?i bit m?u (ví d? 50000) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" line="34" column="21"/>
+        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" line="26" column="21"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -79,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" line="37" column="22"/>
+        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" line="28" column="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -115,7 +96,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" line="22" column="5" bodyfile="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" bodystart="23" bodyend="38"/>
+    <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" line="22" column="5" bodyfile="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h" bodystart="23" bodyend="29"/>
     <listofallmembers>
       <member refid="classgr_1_1ofdm__testbed_1_1ber__pattern__generator_1acb95ed70abea8c70c6e1c27acbaf7566" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::ber_pattern_generator</scope><name>make</name></member>
       <member refid="classgr_1_1ofdm__testbed_1_1ber__pattern__generator_1a5772693e1c8a230b35a18d7bba6882b1" prot="public" virt="pure-virtual"><scope>gr::ofdm_testbed::ber_pattern_generator</scope><name>set_error_rate</name></member>

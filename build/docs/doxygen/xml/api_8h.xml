@@ -5,6 +5,13 @@
     <includes local="no">gnuradio/attributes.h</includes>
     <includedby refid="ber_8h" local="no">ber.h</includedby>
     <includedby refid="ber__pattern__generator_8h" local="no">ber_pattern_generator.h</includedby>
+    <includedby refid="bpsk__demapper_8h" local="no">bpsk_demapper.h</includedby>
+    <includedby refid="bpsk__mapper_8h" local="no">bpsk_mapper.h</includedby>
+    <includedby refid="byte__to__bit_8h" local="no">byte_to_bit.h</includedby>
+    <includedby refid="image__vector__source_8h" local="no">image_vector_source.h</includedby>
+    <includedby refid="primary__tx__control_8h" local="no">primary_tx_control.h</includedby>
+    <includedby refid="receiver__control__p2p_8h" local="no">receiver_control_p2p.h</includedby>
+    <includedby refid="zero__elimination_8h" local="no">zero_elimination.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>api.h</label>
@@ -17,6 +24,22 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="17">
+        <label>receiver_control_p2p_impl.h</label>
+        <link refid="receiver__control__p2p__impl_8h"/>
+      </node>
+      <node id="14">
+        <label>primary_tx_control.h</label>
+        <link refid="primary__tx__control_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>image_vector_source.h</label>
+        <link refid="image__vector__source_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>api.h</label>
         <link refid="api_8h"/>
@@ -24,11 +47,69 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>zero_elimination_impl.h</label>
+        <link refid="zero__elimination__impl_8h"/>
+      </node>
+      <node id="10">
+        <label>byte_to_bit.h</label>
+        <link refid="byte__to__bit_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>primary_tx_control_impl.h</label>
+        <link refid="primary__tx__control__impl_8h"/>
+      </node>
+      <node id="11">
+        <label>byte_to_bit_impl.h</label>
+        <link refid="byte__to__bit__impl_8h"/>
+      </node>
+      <node id="8">
+        <label>bpsk_mapper.h</label>
+        <link refid="bpsk__mapper_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>bpsk_mapper_impl.h</label>
+        <link refid="bpsk__mapper__impl_8h"/>
       </node>
       <node id="2">
         <label>ber.h</label>
         <link refid="ber_8h"/>
         <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>image_vector_source_impl.h</label>
+        <link refid="image__vector__source__impl_8h"/>
+      </node>
+      <node id="18">
+        <label>zero_elimination.h</label>
+        <link refid="zero__elimination_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>receiver_control_p2p.h</label>
+        <link refid="receiver__control__p2p_8h"/>
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -44,6 +125,16 @@
       <node id="3">
         <label>ber_impl.h</label>
         <link refid="ber__impl_8h"/>
+      </node>
+      <node id="7">
+        <label>bpsk_demapper_impl.h</label>
+        <link refid="bpsk__demapper__impl_8h"/>
+      </node>
+      <node id="6">
+        <label>bpsk_demapper.h</label>
+        <link refid="bpsk__demapper_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

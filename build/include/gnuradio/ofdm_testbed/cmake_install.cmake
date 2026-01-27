@@ -47,6 +47,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/api.h"
     "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber.h"
     "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/ber_pattern_generator.h"
+    "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/receiver_control_p2p.h"
+    "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/primary_tx_control.h"
+    "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/byte_to_bit.h"
+    "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/bpsk_mapper.h"
+    "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/bpsk_demapper.h"
+    "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/image_vector_source.h"
+    "/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/zero_elimination.h"
     )
 endif()
 

@@ -275,6 +275,126 @@ ber_python.cc.s:
 	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/ber_python.cc.s
 .PHONY : ber_python.cc.s
 
+bpsk_demapper_python.o: bpsk_demapper_python.cc.o
+.PHONY : bpsk_demapper_python.o
+
+# target to build an object file
+bpsk_demapper_python.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o
+.PHONY : bpsk_demapper_python.cc.o
+
+bpsk_demapper_python.i: bpsk_demapper_python.cc.i
+.PHONY : bpsk_demapper_python.i
+
+# target to preprocess a source file
+bpsk_demapper_python.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.i
+.PHONY : bpsk_demapper_python.cc.i
+
+bpsk_demapper_python.s: bpsk_demapper_python.cc.s
+.PHONY : bpsk_demapper_python.s
+
+# target to generate assembly for a file
+bpsk_demapper_python.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.s
+.PHONY : bpsk_demapper_python.cc.s
+
+bpsk_mapper_python.o: bpsk_mapper_python.cc.o
+.PHONY : bpsk_mapper_python.o
+
+# target to build an object file
+bpsk_mapper_python.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o
+.PHONY : bpsk_mapper_python.cc.o
+
+bpsk_mapper_python.i: bpsk_mapper_python.cc.i
+.PHONY : bpsk_mapper_python.i
+
+# target to preprocess a source file
+bpsk_mapper_python.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.i
+.PHONY : bpsk_mapper_python.cc.i
+
+bpsk_mapper_python.s: bpsk_mapper_python.cc.s
+.PHONY : bpsk_mapper_python.s
+
+# target to generate assembly for a file
+bpsk_mapper_python.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.s
+.PHONY : bpsk_mapper_python.cc.s
+
+byte_to_bit_python.o: byte_to_bit_python.cc.o
+.PHONY : byte_to_bit_python.o
+
+# target to build an object file
+byte_to_bit_python.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o
+.PHONY : byte_to_bit_python.cc.o
+
+byte_to_bit_python.i: byte_to_bit_python.cc.i
+.PHONY : byte_to_bit_python.i
+
+# target to preprocess a source file
+byte_to_bit_python.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.i
+.PHONY : byte_to_bit_python.cc.i
+
+byte_to_bit_python.s: byte_to_bit_python.cc.s
+.PHONY : byte_to_bit_python.s
+
+# target to generate assembly for a file
+byte_to_bit_python.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.s
+.PHONY : byte_to_bit_python.cc.s
+
+image_vector_source_python.o: image_vector_source_python.cc.o
+.PHONY : image_vector_source_python.o
+
+# target to build an object file
+image_vector_source_python.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o
+.PHONY : image_vector_source_python.cc.o
+
+image_vector_source_python.i: image_vector_source_python.cc.i
+.PHONY : image_vector_source_python.i
+
+# target to preprocess a source file
+image_vector_source_python.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.i
+.PHONY : image_vector_source_python.cc.i
+
+image_vector_source_python.s: image_vector_source_python.cc.s
+.PHONY : image_vector_source_python.s
+
+# target to generate assembly for a file
+image_vector_source_python.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.s
+.PHONY : image_vector_source_python.cc.s
+
+primary_tx_control_python.o: primary_tx_control_python.cc.o
+.PHONY : primary_tx_control_python.o
+
+# target to build an object file
+primary_tx_control_python.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o
+.PHONY : primary_tx_control_python.cc.o
+
+primary_tx_control_python.i: primary_tx_control_python.cc.i
+.PHONY : primary_tx_control_python.i
+
+# target to preprocess a source file
+primary_tx_control_python.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.i
+.PHONY : primary_tx_control_python.cc.i
+
+primary_tx_control_python.s: primary_tx_control_python.cc.s
+.PHONY : primary_tx_control_python.s
+
+# target to generate assembly for a file
+primary_tx_control_python.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.s
+.PHONY : primary_tx_control_python.cc.s
+
 python_bindings.o: python_bindings.cc.o
 .PHONY : python_bindings.o
 
@@ -299,6 +419,54 @@ python_bindings.cc.s:
 	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.s
 .PHONY : python_bindings.cc.s
 
+receiver_control_p2p_python.o: receiver_control_p2p_python.cc.o
+.PHONY : receiver_control_p2p_python.o
+
+# target to build an object file
+receiver_control_p2p_python.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o
+.PHONY : receiver_control_p2p_python.cc.o
+
+receiver_control_p2p_python.i: receiver_control_p2p_python.cc.i
+.PHONY : receiver_control_p2p_python.i
+
+# target to preprocess a source file
+receiver_control_p2p_python.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.i
+.PHONY : receiver_control_p2p_python.cc.i
+
+receiver_control_p2p_python.s: receiver_control_p2p_python.cc.s
+.PHONY : receiver_control_p2p_python.s
+
+# target to generate assembly for a file
+receiver_control_p2p_python.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.s
+.PHONY : receiver_control_p2p_python.cc.s
+
+zero_elimination_python.o: zero_elimination_python.cc.o
+.PHONY : zero_elimination_python.o
+
+# target to build an object file
+zero_elimination_python.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o
+.PHONY : zero_elimination_python.cc.o
+
+zero_elimination_python.i: zero_elimination_python.cc.i
+.PHONY : zero_elimination_python.i
+
+# target to preprocess a source file
+zero_elimination_python.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.i
+.PHONY : zero_elimination_python.cc.i
+
+zero_elimination_python.s: zero_elimination_python.cc.s
+.PHONY : zero_elimination_python.s
+
+# target to generate assembly for a file
+zero_elimination_python.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.s
+.PHONY : zero_elimination_python.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -322,9 +490,30 @@ help:
 	@echo "... ber_python.o"
 	@echo "... ber_python.i"
 	@echo "... ber_python.s"
+	@echo "... bpsk_demapper_python.o"
+	@echo "... bpsk_demapper_python.i"
+	@echo "... bpsk_demapper_python.s"
+	@echo "... bpsk_mapper_python.o"
+	@echo "... bpsk_mapper_python.i"
+	@echo "... bpsk_mapper_python.s"
+	@echo "... byte_to_bit_python.o"
+	@echo "... byte_to_bit_python.i"
+	@echo "... byte_to_bit_python.s"
+	@echo "... image_vector_source_python.o"
+	@echo "... image_vector_source_python.i"
+	@echo "... image_vector_source_python.s"
+	@echo "... primary_tx_control_python.o"
+	@echo "... primary_tx_control_python.i"
+	@echo "... primary_tx_control_python.s"
 	@echo "... python_bindings.o"
 	@echo "... python_bindings.i"
 	@echo "... python_bindings.s"
+	@echo "... receiver_control_p2p_python.o"
+	@echo "... receiver_control_p2p_python.i"
+	@echo "... receiver_control_p2p_python.s"
+	@echo "... zero_elimination_python.o"
+	@echo "... zero_elimination_python.i"
+	@echo "... zero_elimination_python.s"
 .PHONY : help
 
 

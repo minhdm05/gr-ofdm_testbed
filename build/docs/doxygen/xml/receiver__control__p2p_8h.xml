@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="receiver__control__p2p_8h" kind="file" language="C++">
+    <compoundname>receiver_control_p2p.h</compoundname>
+    <includes refid="api_8h" local="no">gnuradio/ofdm_testbed/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="receiver__control__p2p__impl_8h" local="no">receiver_control_p2p_impl.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gnuradio/ofdm_testbed/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="4">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="1">
+        <label>receiver_control_p2p.h</label>
+        <link refid="receiver__control__p2p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>receiver_control_p2p_impl.h</label>
+        <link refid="receiver__control__p2p__impl_8h"/>
+      </node>
+      <node id="1">
+        <label>receiver_control_p2p.h</label>
+        <link refid="receiver__control__p2p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p" prot="public">gr::ofdm_testbed::receiver_control_p2p</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1ofdm__testbed">gr::ofdm_testbed</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/receiver_control_p2p.h"/>
+  </compounddef>
+</doxygen>

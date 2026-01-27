@@ -4,8 +4,22 @@
     <compoundname>gr::ofdm_testbed</compoundname>
     <innerclass refid="classgr_1_1ofdm__testbed_1_1ber" prot="public">gr::ofdm_testbed::ber</innerclass>
     <innerclass refid="classgr_1_1ofdm__testbed_1_1ber__pattern__generator" prot="public">gr::ofdm_testbed::ber_pattern_generator</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper" prot="public">gr::ofdm_testbed::bpsk_demapper</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper" prot="public">gr::ofdm_testbed::bpsk_mapper</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1byte__to__bit" prot="public">gr::ofdm_testbed::byte_to_bit</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1image__vector__source" prot="public">gr::ofdm_testbed::image_vector_source</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1primary__tx__control" prot="public">gr::ofdm_testbed::primary_tx_control</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p" prot="public">gr::ofdm_testbed::receiver_control_p2p</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1zero__elimination" prot="public">gr::ofdm_testbed::zero_elimination</innerclass>
     <innerclass refid="classgr_1_1ofdm__testbed_1_1ber__impl" prot="public">gr::ofdm_testbed::ber_impl</innerclass>
     <innerclass refid="classgr_1_1ofdm__testbed_1_1ber__pattern__generator__impl" prot="public">gr::ofdm_testbed::ber_pattern_generator_impl</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1bpsk__demapper__impl" prot="public">gr::ofdm_testbed::bpsk_demapper_impl</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1bpsk__mapper__impl" prot="public">gr::ofdm_testbed::bpsk_mapper_impl</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1byte__to__bit__impl" prot="public">gr::ofdm_testbed::byte_to_bit_impl</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1image__vector__source__impl" prot="public">gr::ofdm_testbed::image_vector_source_impl</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1primary__tx__control__impl" prot="public">gr::ofdm_testbed::primary_tx_control_impl</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1receiver__control__p2p__impl" prot="public">gr::ofdm_testbed::receiver_control_p2p_impl</innerclass>
+    <innerclass refid="classgr_1_1ofdm__testbed_1_1zero__elimination__impl" prot="public">gr::ofdm_testbed::zero_elimination_impl</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -97,10 +97,108 @@ python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/ber_pattern_gene
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/ber_pattern_generator_python.cc.s"
 	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/ber_pattern_generator_python.cc -o CMakeFiles/ofdm_testbed_python.dir/ber_pattern_generator_python.cc.s
 
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o: ../python/ofdm_testbed/bindings/receiver_control_p2p_python.cc
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/receiver_control_p2p_python.cc
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.i"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/receiver_control_p2p_python.cc > CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.i
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.s"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/receiver_control_p2p_python.cc -o CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.s
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o: ../python/ofdm_testbed/bindings/primary_tx_control_python.cc
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/primary_tx_control_python.cc
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.i"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/primary_tx_control_python.cc > CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.i
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.s"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/primary_tx_control_python.cc -o CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.s
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o: ../python/ofdm_testbed/bindings/byte_to_bit_python.cc
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/byte_to_bit_python.cc
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.i"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/byte_to_bit_python.cc > CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.i
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.s"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/byte_to_bit_python.cc -o CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.s
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o: ../python/ofdm_testbed/bindings/bpsk_mapper_python.cc
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/bpsk_mapper_python.cc
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.i"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/bpsk_mapper_python.cc > CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.i
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.s"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/bpsk_mapper_python.cc -o CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.s
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o: ../python/ofdm_testbed/bindings/bpsk_demapper_python.cc
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/bpsk_demapper_python.cc
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.i"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/bpsk_demapper_python.cc > CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.i
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.s"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/bpsk_demapper_python.cc -o CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.s
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o: ../python/ofdm_testbed/bindings/image_vector_source_python.cc
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/image_vector_source_python.cc
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.i"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/image_vector_source_python.cc > CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.i
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.s"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/image_vector_source_python.cc -o CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.s
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o: ../python/ofdm_testbed/bindings/zero_elimination_python.cc
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/zero_elimination_python.cc
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.i"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/zero_elimination_python.cc > CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.i
+
+python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.s"
+	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/zero_elimination_python.cc -o CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.s
+
 python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/flags.make
 python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o: ../python/ofdm_testbed/bindings/python_bindings.cc
 python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o"
 	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o -MF CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o.d -o CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o -c /home/minh/gr-ofdm_testbed/python/ofdm_testbed/bindings/python_bindings.cc
 
 python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.i: cmake_force
@@ -115,6 +213,13 @@ python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.
 ofdm_testbed_python_OBJECTS = \
 "CMakeFiles/ofdm_testbed_python.dir/ber_python.cc.o" \
 "CMakeFiles/ofdm_testbed_python.dir/ber_pattern_generator_python.cc.o" \
+"CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o" \
+"CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o" \
+"CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o" \
+"CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o" \
+"CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o" \
+"CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o" \
+"CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o" \
 "CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o"
 
 # External object files for target ofdm_testbed_python
@@ -122,6 +227,13 @@ ofdm_testbed_python_EXTERNAL_OBJECTS =
 
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/ber_python.cc.o
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/ber_pattern_generator_python.cc.o
+python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/receiver_control_p2p_python.cc.o
+python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/primary_tx_control_python.cc.o
+python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/byte_to_bit_python.cc.o
+python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_mapper_python.cc.o
+python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/bpsk_demapper_python.cc.o
+python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/image_vector_source_python.cc.o
+python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/zero_elimination_python.cc.o
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/python_bindings.cc.o
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/build.make
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0
@@ -140,7 +252,7 @@ python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libgmpxx.so
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: /usr/lib/x86_64-linux-gnu/libgmp.so
 python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so: python/ofdm_testbed/bindings/CMakeFiles/ofdm_testbed_python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/minh/gr-ofdm_testbed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared module ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so"
 	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ofdm_testbed_python.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings && /usr/bin/strip /home/minh/gr-ofdm_testbed/build/python/ofdm_testbed/bindings/ofdm_testbed_python.cpython-310-x86_64-linux-gnu.so
 

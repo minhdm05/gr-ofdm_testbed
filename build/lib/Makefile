@@ -261,6 +261,126 @@ ber_pattern_generator_impl.cc.s:
 	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/ber_pattern_generator_impl.cc.s
 .PHONY : ber_pattern_generator_impl.cc.s
 
+bpsk_demapper_impl.o: bpsk_demapper_impl.cc.o
+.PHONY : bpsk_demapper_impl.o
+
+# target to build an object file
+bpsk_demapper_impl.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/bpsk_demapper_impl.cc.o
+.PHONY : bpsk_demapper_impl.cc.o
+
+bpsk_demapper_impl.i: bpsk_demapper_impl.cc.i
+.PHONY : bpsk_demapper_impl.i
+
+# target to preprocess a source file
+bpsk_demapper_impl.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/bpsk_demapper_impl.cc.i
+.PHONY : bpsk_demapper_impl.cc.i
+
+bpsk_demapper_impl.s: bpsk_demapper_impl.cc.s
+.PHONY : bpsk_demapper_impl.s
+
+# target to generate assembly for a file
+bpsk_demapper_impl.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/bpsk_demapper_impl.cc.s
+.PHONY : bpsk_demapper_impl.cc.s
+
+bpsk_mapper_impl.o: bpsk_mapper_impl.cc.o
+.PHONY : bpsk_mapper_impl.o
+
+# target to build an object file
+bpsk_mapper_impl.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/bpsk_mapper_impl.cc.o
+.PHONY : bpsk_mapper_impl.cc.o
+
+bpsk_mapper_impl.i: bpsk_mapper_impl.cc.i
+.PHONY : bpsk_mapper_impl.i
+
+# target to preprocess a source file
+bpsk_mapper_impl.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/bpsk_mapper_impl.cc.i
+.PHONY : bpsk_mapper_impl.cc.i
+
+bpsk_mapper_impl.s: bpsk_mapper_impl.cc.s
+.PHONY : bpsk_mapper_impl.s
+
+# target to generate assembly for a file
+bpsk_mapper_impl.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/bpsk_mapper_impl.cc.s
+.PHONY : bpsk_mapper_impl.cc.s
+
+byte_to_bit_impl.o: byte_to_bit_impl.cc.o
+.PHONY : byte_to_bit_impl.o
+
+# target to build an object file
+byte_to_bit_impl.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/byte_to_bit_impl.cc.o
+.PHONY : byte_to_bit_impl.cc.o
+
+byte_to_bit_impl.i: byte_to_bit_impl.cc.i
+.PHONY : byte_to_bit_impl.i
+
+# target to preprocess a source file
+byte_to_bit_impl.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/byte_to_bit_impl.cc.i
+.PHONY : byte_to_bit_impl.cc.i
+
+byte_to_bit_impl.s: byte_to_bit_impl.cc.s
+.PHONY : byte_to_bit_impl.s
+
+# target to generate assembly for a file
+byte_to_bit_impl.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/byte_to_bit_impl.cc.s
+.PHONY : byte_to_bit_impl.cc.s
+
+image_vector_source_impl.o: image_vector_source_impl.cc.o
+.PHONY : image_vector_source_impl.o
+
+# target to build an object file
+image_vector_source_impl.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/image_vector_source_impl.cc.o
+.PHONY : image_vector_source_impl.cc.o
+
+image_vector_source_impl.i: image_vector_source_impl.cc.i
+.PHONY : image_vector_source_impl.i
+
+# target to preprocess a source file
+image_vector_source_impl.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/image_vector_source_impl.cc.i
+.PHONY : image_vector_source_impl.cc.i
+
+image_vector_source_impl.s: image_vector_source_impl.cc.s
+.PHONY : image_vector_source_impl.s
+
+# target to generate assembly for a file
+image_vector_source_impl.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/image_vector_source_impl.cc.s
+.PHONY : image_vector_source_impl.cc.s
+
+primary_tx_control_impl.o: primary_tx_control_impl.cc.o
+.PHONY : primary_tx_control_impl.o
+
+# target to build an object file
+primary_tx_control_impl.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/primary_tx_control_impl.cc.o
+.PHONY : primary_tx_control_impl.cc.o
+
+primary_tx_control_impl.i: primary_tx_control_impl.cc.i
+.PHONY : primary_tx_control_impl.i
+
+# target to preprocess a source file
+primary_tx_control_impl.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/primary_tx_control_impl.cc.i
+.PHONY : primary_tx_control_impl.cc.i
+
+primary_tx_control_impl.s: primary_tx_control_impl.cc.s
+.PHONY : primary_tx_control_impl.s
+
+# target to generate assembly for a file
+primary_tx_control_impl.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/primary_tx_control_impl.cc.s
+.PHONY : primary_tx_control_impl.cc.s
+
 qa_ber.o: qa_ber.cc.o
 .PHONY : qa_ber.o
 
@@ -309,6 +429,54 @@ qa_ber_pattern_generator.cc.s:
 	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ofdm_testbed_qa_ber_pattern_generator.cc.dir/build.make lib/CMakeFiles/ofdm_testbed_qa_ber_pattern_generator.cc.dir/qa_ber_pattern_generator.cc.s
 .PHONY : qa_ber_pattern_generator.cc.s
 
+receiver_control_p2p_impl.o: receiver_control_p2p_impl.cc.o
+.PHONY : receiver_control_p2p_impl.o
+
+# target to build an object file
+receiver_control_p2p_impl.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/receiver_control_p2p_impl.cc.o
+.PHONY : receiver_control_p2p_impl.cc.o
+
+receiver_control_p2p_impl.i: receiver_control_p2p_impl.cc.i
+.PHONY : receiver_control_p2p_impl.i
+
+# target to preprocess a source file
+receiver_control_p2p_impl.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/receiver_control_p2p_impl.cc.i
+.PHONY : receiver_control_p2p_impl.cc.i
+
+receiver_control_p2p_impl.s: receiver_control_p2p_impl.cc.s
+.PHONY : receiver_control_p2p_impl.s
+
+# target to generate assembly for a file
+receiver_control_p2p_impl.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/receiver_control_p2p_impl.cc.s
+.PHONY : receiver_control_p2p_impl.cc.s
+
+zero_elimination_impl.o: zero_elimination_impl.cc.o
+.PHONY : zero_elimination_impl.o
+
+# target to build an object file
+zero_elimination_impl.cc.o:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/zero_elimination_impl.cc.o
+.PHONY : zero_elimination_impl.cc.o
+
+zero_elimination_impl.i: zero_elimination_impl.cc.i
+.PHONY : zero_elimination_impl.i
+
+# target to preprocess a source file
+zero_elimination_impl.cc.i:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/zero_elimination_impl.cc.i
+.PHONY : zero_elimination_impl.cc.i
+
+zero_elimination_impl.s: zero_elimination_impl.cc.s
+.PHONY : zero_elimination_impl.s
+
+# target to generate assembly for a file
+zero_elimination_impl.cc.s:
+	cd /home/minh/gr-ofdm_testbed/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/gnuradio-ofdm_testbed.dir/build.make lib/CMakeFiles/gnuradio-ofdm_testbed.dir/zero_elimination_impl.cc.s
+.PHONY : zero_elimination_impl.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -331,12 +499,33 @@ help:
 	@echo "... ber_pattern_generator_impl.o"
 	@echo "... ber_pattern_generator_impl.i"
 	@echo "... ber_pattern_generator_impl.s"
+	@echo "... bpsk_demapper_impl.o"
+	@echo "... bpsk_demapper_impl.i"
+	@echo "... bpsk_demapper_impl.s"
+	@echo "... bpsk_mapper_impl.o"
+	@echo "... bpsk_mapper_impl.i"
+	@echo "... bpsk_mapper_impl.s"
+	@echo "... byte_to_bit_impl.o"
+	@echo "... byte_to_bit_impl.i"
+	@echo "... byte_to_bit_impl.s"
+	@echo "... image_vector_source_impl.o"
+	@echo "... image_vector_source_impl.i"
+	@echo "... image_vector_source_impl.s"
+	@echo "... primary_tx_control_impl.o"
+	@echo "... primary_tx_control_impl.i"
+	@echo "... primary_tx_control_impl.s"
 	@echo "... qa_ber.o"
 	@echo "... qa_ber.i"
 	@echo "... qa_ber.s"
 	@echo "... qa_ber_pattern_generator.o"
 	@echo "... qa_ber_pattern_generator.i"
 	@echo "... qa_ber_pattern_generator.s"
+	@echo "... receiver_control_p2p_impl.o"
+	@echo "... receiver_control_p2p_impl.i"
+	@echo "... receiver_control_p2p_impl.s"
+	@echo "... zero_elimination_impl.o"
+	@echo "... zero_elimination_impl.i"
+	@echo "... zero_elimination_impl.s"
 .PHONY : help
 
 

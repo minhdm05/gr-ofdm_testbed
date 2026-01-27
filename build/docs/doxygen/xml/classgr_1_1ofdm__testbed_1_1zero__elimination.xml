@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1ofdm__testbed_1_1zero__elimination" kind="class" language="C++" prot="public">
+    <compoundname>gr::ofdm_testbed::zero_elimination</compoundname>
+    <basecompoundref prot="public" virt="virtual">gr::block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1ofdm__testbed_1_1zero__elimination__impl" prot="public" virt="non-virtual">gr::ofdm_testbed::zero_elimination_impl</derivedcompoundref>
+    <includes refid="zero__elimination_8h" local="no">zero_elimination.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1ofdm__testbed_1_1zero__elimination_1aae58a825c3277d4479d1770be86d2c08" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classgr_1_1ofdm__testbed_1_1zero__elimination" kindref="compound">zero_elimination</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;zero_elimination&gt; gr::ofdm_testbed::zero_elimination::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/zero_elimination.h" line="25" column="31" bodyfile="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/zero_elimination.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1ofdm__testbed_1_1zero__elimination_1a9140e1af51e0e20e3382ef1a40ad5db6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1ofdm__testbed_1_1zero__elimination_1aae58a825c3277d4479d1770be86d2c08" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::ofdm_testbed::zero_elimination::make</definition>
+        <argsstring>(int node_id, int data_len)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1ofdm__testbed_1_1zero__elimination" kindref="compound">ofdm_testbed::zero_elimination</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/zero_elimination.h" line="31" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>gr::ofdm_testbed::zero_elimination_impl</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1zero__elimination__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::ofdm_testbed::zero_elimination</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1zero__elimination"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::ofdm_testbed::zero_elimination</label>
+        <link refid="classgr_1_1ofdm__testbed_1_1zero__elimination"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/zero_elimination.h" line="22" column="5" bodyfile="/home/minh/gr-ofdm_testbed/include/gnuradio/ofdm_testbed/zero_elimination.h" bodystart="23" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ofdm__testbed_1_1zero__elimination_1a9140e1af51e0e20e3382ef1a40ad5db6" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::zero_elimination</scope><name>make</name></member>
+      <member refid="classgr_1_1ofdm__testbed_1_1zero__elimination_1aae58a825c3277d4479d1770be86d2c08" prot="public" virt="non-virtual"><scope>gr::ofdm_testbed::zero_elimination</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

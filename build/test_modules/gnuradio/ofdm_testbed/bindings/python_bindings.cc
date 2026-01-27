@@ -23,6 +23,13 @@ namespace py = pybind11;
 // BINDING_FUNCTION_PROTOTYPES(
     void bind_ber(py::module& m);
     void bind_ber_pattern_generator(py::module& m);
+    void bind_receiver_control_p2p(py::module& m);
+    void bind_primary_tx_control(py::module& m);
+    void bind_byte_to_bit(py::module& m);
+    void bind_bpsk_mapper(py::module& m);
+    void bind_bpsk_demapper(py::module& m);
+    void bind_image_vector_source(py::module& m);
+    void bind_zero_elimination(py::module& m);
 // ) END BINDING_FUNCTION_PROTOTYPES
 
 
@@ -53,5 +60,12 @@ PYBIND11_MODULE(ofdm_testbed_python, m)
     // BINDING_FUNCTION_CALLS(
     bind_ber(m);
     bind_ber_pattern_generator(m);
+    bind_receiver_control_p2p(m);
+    bind_primary_tx_control(m);
+    bind_byte_to_bit(m);
+    bind_bpsk_mapper(m);
+    bind_bpsk_demapper(m);
+    bind_image_vector_source(m);
+    bind_zero_elimination(m);
     // ) END BINDING_FUNCTION_CALLS
 }

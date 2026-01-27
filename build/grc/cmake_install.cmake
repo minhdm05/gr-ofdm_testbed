@@ -46,6 +46,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
     "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_ber.block.yml"
     "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_ber_pattern_generator.block.yml"
+    "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_receiver_control_p2p.block.yml"
+    "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_primary_tx_control.block.yml"
+    "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_byte_to_bit.block.yml"
+    "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_bpsk_mapper.block.yml"
+    "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_bpsk_demapper.block.yml"
+    "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_image_vector_source.block.yml"
+    "/home/minh/gr-ofdm_testbed/grc/ofdm_testbed_zero_elimination.block.yml"
     )
 endif()
 
