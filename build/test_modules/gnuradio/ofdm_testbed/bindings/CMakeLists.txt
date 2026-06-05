@@ -27,7 +27,6 @@ include(GrPybind)
 ########################################################################
 # Python Bindings
 ########################################################################
-
 list(APPEND ofdm_testbed_python_files
     ber_python.cc
     ber_pattern_generator_python.cc
@@ -37,7 +36,8 @@ list(APPEND ofdm_testbed_python_files
     bpsk_mapper_python.cc
     bpsk_demapper_python.cc
     image_vector_source_python.cc
-    zero_elimination_python.cc python_bindings.cc)
+    zero_elimination_python.cc
+    python_bindings.cc)
 
 GR_PYBIND_MAKE_OOT(ofdm_testbed
    ../../..

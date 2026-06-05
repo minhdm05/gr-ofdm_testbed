@@ -5,7 +5,6 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
-
 install(FILES
     ofdm_testbed_ber.block.yml
     ofdm_testbed_ber_pattern_generator.block.yml
@@ -15,5 +14,6 @@ install(FILES
     ofdm_testbed_bpsk_mapper.block.yml
     ofdm_testbed_bpsk_demapper.block.yml
     ofdm_testbed_image_vector_source.block.yml
-    ofdm_testbed_zero_elimination.block.yml DESTINATION share/gnuradio/grc/blocks
+    ofdm_testbed_zero_elimination.block.yml
+    DESTINATION share/gnuradio/grc/blocks
 )

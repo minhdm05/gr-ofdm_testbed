@@ -74,7 +74,7 @@ class png(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 32000
+        self.samp_rate = samp_rate = 1e6
 
         ##################################################
         # Blocks
@@ -89,8 +89,8 @@ class png(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.ofdm_testbed_image_vector_source_0, 0), (self.show_image_0, 0))
         self.connect((self.ofdm_testbed_image_vector_source_0, 0), (self.show_image_0, 1))
+        self.connect((self.ofdm_testbed_image_vector_source_0, 0), (self.show_image_0, 0))
 
 
     def closeEvent(self, event):

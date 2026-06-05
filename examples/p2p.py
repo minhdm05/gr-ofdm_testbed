@@ -36,7 +36,8 @@ from argparse import ArgumentParser
 from gnuradio.eng_arg import eng_float, intx
 from gnuradio import eng_notation
 from gnuradio import ofdm_testbed
-from gnuradio import soapy
+import osmosdr
+import time
 
 
 
@@ -78,18 +79,14 @@ class p2p(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.silence_block_rep = silence_block_rep = 1
-        self.samp_rate = samp_rate = 500e3
-        self.preamble_block_rep = preamble_block_rep = 1
-        self.pilot_block_rep = pilot_block_rep = 1
+        self.samp_rate = samp_rate = 2.4e6
+        self.packet_len = packet_len = 50
         self.occupied_tones = occupied_tones = 48
+        self.len_tag_key = len_tag_key = "packet_len"
         self.fft_len = fft_len = 64
         self.data_size = data_size = 1024
-        self.data_block_sz = data_block_sz = 21
-        self.data_block_rep = data_block_rep = 1
         self.cp_length = cp_length = 16
-        self.bpsk = bpsk = digital.constellation_calcdist([-1+1j, 1+1j], [0, 1],
-        2, 1, digital.constellation.AMPLITUDE_NORMALIZATION).base()
+        self.band_width = band_width = 2.7e6
 
         ##################################################
         # Blocks
@@ -106,32 +103,6 @@ class p2p(gr.top_block, Qt.QWidget):
         self.tab_0_layout_1.addLayout(self.tab_0_grid_layout_1)
         self.tab_0.addTab(self.tab_0_widget_1, 'Demodulation')
         self.top_layout.addWidget(self.tab_0)
-        self.soapy_bladerf_source_0 = None
-        dev = 'driver=bladerf'
-        stream_args = ''
-        tune_args = ['']
-        settings = ['']
-
-        self.soapy_bladerf_source_0 = soapy.source(dev, "fc32", 1, 'bladerf=ca4c',
-                                  stream_args, tune_args, settings)
-        self.soapy_bladerf_source_0.set_sample_rate(0, samp_rate)
-        self.soapy_bladerf_source_0.set_bandwidth(0, 0.0)
-        self.soapy_bladerf_source_0.set_frequency(0, 2.45e9)
-        self.soapy_bladerf_source_0.set_frequency_correction(0, 0)
-        self.soapy_bladerf_source_0.set_gain(0, min(max(20.0, -1.0), 60.0))
-        self.soapy_bladerf_sink_0 = None
-        dev = 'driver=bladerf'
-        stream_args = ''
-        tune_args = ['']
-        settings = ['']
-
-        self.soapy_bladerf_sink_0 = soapy.sink(dev, "fc32", 1, 'bladerf=ca4c',
-                                  stream_args, tune_args, settings)
-        self.soapy_bladerf_sink_0.set_sample_rate(0, samp_rate)
-        self.soapy_bladerf_sink_0.set_bandwidth(0, 0.0)
-        self.soapy_bladerf_sink_0.set_frequency(0, 2.415e9)
-        self.soapy_bladerf_sink_0.set_frequency_correction(0, 0)
-        self.soapy_bladerf_sink_0.set_gain(0, min(max(20.0, 17.0), 73.0))
         self.show_image_0 = display.show_image( 512, 512  )
         self.show_image_0.displayBottomUp(False)
         self._show_image_0_win = sip.wrapinstance(self.show_image_0.qwidget(), Qt.QWidget)
@@ -144,7 +115,7 @@ class p2p(gr.top_block, Qt.QWidget):
             1024, #fftsize
             window.WIN_BLACKMAN_hARRIS, #wintype
             0, #fc
-            samp_rate, #bw
+            2.5e6, #bw
             "", #name
             True, #plotfreq
             True, #plotwaterfall
@@ -162,24 +133,50 @@ class p2p(gr.top_block, Qt.QWidget):
             self.tab_0_grid_layout_0.setRowStretch(r, 1)
         for c in range(0, 1):
             self.tab_0_grid_layout_0.setColumnStretch(c, 1)
+        self.osmosdr_source_0 = osmosdr.source(
+            args="numchan=" + str(1) + " " + 'bladerf=2a40,buffers=128,buflen=65536'
+        )
+        self.osmosdr_source_0.set_time_unknown_pps(osmosdr.time_spec_t())
+        self.osmosdr_source_0.set_sample_rate(samp_rate)
+        self.osmosdr_source_0.set_center_freq(2.415e9, 0)
+        self.osmosdr_source_0.set_freq_corr(0, 0)
+        self.osmosdr_source_0.set_dc_offset_mode(1, 0)
+        self.osmosdr_source_0.set_iq_balance_mode(1, 0)
+        self.osmosdr_source_0.set_gain_mode(False, 0)
+        self.osmosdr_source_0.set_gain(20, 0)
+        self.osmosdr_source_0.set_if_gain(20, 0)
+        self.osmosdr_source_0.set_bb_gain(20, 0)
+        self.osmosdr_source_0.set_antenna('', 0)
+        self.osmosdr_source_0.set_bandwidth(band_width, 0)
+        self.osmosdr_sink_0_0 = osmosdr.sink(
+            args="numchan=" + str(1) + " " + 'bladerf=2a40,buffers=128,buflen=65536'
+        )
+        self.osmosdr_sink_0_0.set_time_unknown_pps(osmosdr.time_spec_t())
+        self.osmosdr_sink_0_0.set_sample_rate(samp_rate)
+        self.osmosdr_sink_0_0.set_center_freq(2.4e9, 0)
+        self.osmosdr_sink_0_0.set_freq_corr(0, 0)
+        self.osmosdr_sink_0_0.set_gain(60, 0)
+        self.osmosdr_sink_0_0.set_if_gain(20, 0)
+        self.osmosdr_sink_0_0.set_bb_gain(20, 0)
+        self.osmosdr_sink_0_0.set_antenna('', 0)
+        self.osmosdr_sink_0_0.set_bandwidth(band_width, 0)
         self.ofdm_testbed_zero_elimination_0 = ofdm_testbed.zero_elimination(170, 1024)
         self.ofdm_testbed_receiver_control_p2p_0 = ofdm_testbed.receiver_control_p2p(1024, 187, 170)
-        self.ofdm_testbed_byte_to_bit_0 = ofdm_testbed.byte_to_bit()
         self.digital_ofdm_tx_0 = digital.ofdm_tx(
             fft_len=fft_len,
-            cp_len=fft_len//4,
-            packet_length_tag_key='len_tag_key',
+            cp_len=cp_length,
+            packet_length_tag_key=len_tag_key,
             occupied_carriers=((-4,-3,-2,-1,1,2,3,4),),
             pilot_carriers=((-6,-5,5,6),),
             pilot_symbols=((-1,1,-1,1),),
             sync_word1=None,
             sync_word2=None,
             bps_header=1,
-            bps_payload=1,
+            bps_payload=2,
             rolloff=0,
             debug_log=False,
             scramble_bits=False)
-        self.digital_ofdm_rx_0_0 = digital.ofdm_rx(
+        self.digital_ofdm_rx_0_0_0 = digital.ofdm_rx(
             fft_len=fft_len, cp_len=fft_len//4,
             frame_length_tag_key='frame_'+"rx_len",
             packet_length_tag_key="rx_len",
@@ -189,27 +186,31 @@ class p2p(gr.top_block, Qt.QWidget):
             sync_word1=None,
             sync_word2=None,
             bps_header=1,
-            bps_payload=1,
+            bps_payload=2,
             debug_log=False,
             scramble_bits=False)
-        self.dc_blocker_xx_0_0 = filter.dc_blocker_cc(256, True)
-        self.blocks_multiply_const_vxx_0_0_0 = blocks.multiply_const_cc(25e3)
+        self.dc_blocker_xx_0_0 = filter.dc_blocker_cc(128, True)
+        self.blocks_tag_debug_0 = blocks.tag_debug(gr.sizeof_char*1, 'Rx Packets', "")
+        self.blocks_tag_debug_0.set_display(False)
+        self.blocks_stream_to_tagged_stream_0 = blocks.stream_to_tagged_stream(gr.sizeof_char, 1, packet_len, len_tag_key)
+        self.blocks_multiply_const_vxx_0_0 = blocks.multiply_const_cc(0.05)
 
 
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.blocks_multiply_const_vxx_0_0_0, 0), (self.digital_ofdm_rx_0_0, 0))
-        self.connect((self.dc_blocker_xx_0_0, 0), (self.blocks_multiply_const_vxx_0_0_0, 0))
-        self.connect((self.digital_ofdm_rx_0_0, 0), (self.ofdm_testbed_receiver_control_p2p_0, 0))
-        self.connect((self.digital_ofdm_tx_0, 0), (self.soapy_bladerf_sink_0, 0))
-        self.connect((self.ofdm_testbed_byte_to_bit_0, 0), (self.digital_ofdm_tx_0, 0))
-        self.connect((self.ofdm_testbed_receiver_control_p2p_0, 0), (self.ofdm_testbed_byte_to_bit_0, 0))
+        self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.osmosdr_sink_0_0, 0))
+        self.connect((self.blocks_stream_to_tagged_stream_0, 0), (self.digital_ofdm_tx_0, 0))
+        self.connect((self.dc_blocker_xx_0_0, 0), (self.digital_ofdm_rx_0_0_0, 0))
+        self.connect((self.dc_blocker_xx_0_0, 0), (self.qtgui_sink_x_0, 0))
+        self.connect((self.digital_ofdm_rx_0_0_0, 0), (self.blocks_tag_debug_0, 0))
+        self.connect((self.digital_ofdm_rx_0_0_0, 0), (self.ofdm_testbed_receiver_control_p2p_0, 0))
+        self.connect((self.digital_ofdm_tx_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
+        self.connect((self.ofdm_testbed_receiver_control_p2p_0, 0), (self.blocks_stream_to_tagged_stream_0, 0))
         self.connect((self.ofdm_testbed_receiver_control_p2p_0, 1), (self.ofdm_testbed_zero_elimination_0, 0))
-        self.connect((self.ofdm_testbed_zero_elimination_0, 0), (self.show_image_0, 0))
         self.connect((self.ofdm_testbed_zero_elimination_0, 0), (self.show_image_0, 1))
-        self.connect((self.soapy_bladerf_source_0, 0), (self.dc_blocker_xx_0_0, 0))
-        self.connect((self.soapy_bladerf_source_0, 0), (self.qtgui_sink_x_0, 0))
+        self.connect((self.ofdm_testbed_zero_elimination_0, 0), (self.show_image_0, 0))
+        self.connect((self.osmosdr_source_0, 0), (self.dc_blocker_xx_0_0, 0))
 
 
     def closeEvent(self, event):
@@ -220,38 +221,33 @@ class p2p(gr.top_block, Qt.QWidget):
 
         event.accept()
 
-    def get_silence_block_rep(self):
-        return self.silence_block_rep
-
-    def set_silence_block_rep(self, silence_block_rep):
-        self.silence_block_rep = silence_block_rep
-
     def get_samp_rate(self):
         return self.samp_rate
 
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
-        self.qtgui_sink_x_0.set_frequency_range(0, self.samp_rate)
-        self.soapy_bladerf_sink_0.set_sample_rate(0, self.samp_rate)
-        self.soapy_bladerf_source_0.set_sample_rate(0, self.samp_rate)
+        self.osmosdr_sink_0_0.set_sample_rate(self.samp_rate)
+        self.osmosdr_source_0.set_sample_rate(self.samp_rate)
 
-    def get_preamble_block_rep(self):
-        return self.preamble_block_rep
+    def get_packet_len(self):
+        return self.packet_len
 
-    def set_preamble_block_rep(self, preamble_block_rep):
-        self.preamble_block_rep = preamble_block_rep
-
-    def get_pilot_block_rep(self):
-        return self.pilot_block_rep
-
-    def set_pilot_block_rep(self, pilot_block_rep):
-        self.pilot_block_rep = pilot_block_rep
+    def set_packet_len(self, packet_len):
+        self.packet_len = packet_len
+        self.blocks_stream_to_tagged_stream_0.set_packet_len(self.packet_len)
+        self.blocks_stream_to_tagged_stream_0.set_packet_len_pmt(self.packet_len)
 
     def get_occupied_tones(self):
         return self.occupied_tones
 
     def set_occupied_tones(self, occupied_tones):
         self.occupied_tones = occupied_tones
+
+    def get_len_tag_key(self):
+        return self.len_tag_key
+
+    def set_len_tag_key(self, len_tag_key):
+        self.len_tag_key = len_tag_key
 
     def get_fft_len(self):
         return self.fft_len
@@ -265,29 +261,19 @@ class p2p(gr.top_block, Qt.QWidget):
     def set_data_size(self, data_size):
         self.data_size = data_size
 
-    def get_data_block_sz(self):
-        return self.data_block_sz
-
-    def set_data_block_sz(self, data_block_sz):
-        self.data_block_sz = data_block_sz
-
-    def get_data_block_rep(self):
-        return self.data_block_rep
-
-    def set_data_block_rep(self, data_block_rep):
-        self.data_block_rep = data_block_rep
-
     def get_cp_length(self):
         return self.cp_length
 
     def set_cp_length(self, cp_length):
         self.cp_length = cp_length
 
-    def get_bpsk(self):
-        return self.bpsk
+    def get_band_width(self):
+        return self.band_width
 
-    def set_bpsk(self, bpsk):
-        self.bpsk = bpsk
+    def set_band_width(self, band_width):
+        self.band_width = band_width
+        self.osmosdr_sink_0_0.set_bandwidth(self.band_width, 0)
+        self.osmosdr_source_0.set_bandwidth(self.band_width, 0)
 
 
 

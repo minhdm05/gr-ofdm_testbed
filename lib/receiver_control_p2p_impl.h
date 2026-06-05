@@ -61,7 +61,6 @@ namespace gr {
         
         unsigned char d_session_no;
         bool d_session_request_trans;
-        
         bool d_data_out;
         bool d_data_out_full;
         

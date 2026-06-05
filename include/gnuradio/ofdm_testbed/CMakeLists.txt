@@ -19,5 +19,6 @@ install(FILES
     bpsk_mapper.h
     bpsk_demapper.h
     image_vector_source.h
-    zero_elimination.h DESTINATION include/gnuradio/ofdm_testbed
+    zero_elimination.h
+    DESTINATION include/gnuradio/ofdm_testbed
 )

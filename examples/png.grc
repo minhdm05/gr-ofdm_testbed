@@ -37,7 +37,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '32000'
+    value: 1e6
   states:
     bus_sink: false
     bus_source: false
@@ -64,9 +64,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [488, 212.0]
+    coordinate: [528, 188.0]
     rotation: 0
-    state: true
+    state: enabled
 - name: show_image_0
   id: show_image
   parameters:
@@ -81,9 +81,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 228.0]
+    coordinate: [832, 228.0]
     rotation: 0
-    state: true
+    state: enabled
 
 connections:
 - [ofdm_testbed_image_vector_source_0, '0', show_image_0, '0']

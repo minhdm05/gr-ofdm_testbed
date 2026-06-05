@@ -10,7 +10,6 @@
 # Setup library
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
-
 list(APPEND ofdm_testbed_sources
     ber_impl.cc
     ber_pattern_generator_impl.cc
@@ -21,7 +20,7 @@ list(APPEND ofdm_testbed_sources
     bpsk_demapper_impl.cc
     image_vector_source_impl.cc
     zero_elimination_impl.cc
-)
+    )
 
 set(ofdm_testbed_sources "${ofdm_testbed_sources}" PARENT_SCOPE)
 if(NOT ofdm_testbed_sources)
