@@ -54,7 +54,11 @@ blocks:
     min_len: '200'
     orient: QtCore.Qt.Horizontal
     rangeType: float
+<<<<<<< HEAD
     start: '0.0'
+=======
+    start: '0.00001'
+>>>>>>> upstream/master
     step: '0.00001'
     stop: '1'
     value: '0.01'
@@ -104,6 +108,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
+<<<<<<< HEAD
     coordinate: [200, 12.0]
     rotation: 0
     state: enabled
@@ -123,6 +128,9 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [800, 228.0]
+=======
+    coordinate: [184, 12]
+>>>>>>> upstream/master
     rotation: 0
     state: enabled
 - name: blocks_throttle_0
@@ -141,7 +149,11 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
+<<<<<<< HEAD
     coordinate: [368, 204.0]
+=======
+    coordinate: [272, 188.0]
+>>>>>>> upstream/master
     rotation: 0
     state: true
 - name: epy_block_0
@@ -149,6 +161,7 @@ blocks:
   parameters:
     _source_code: "import numpy as np\nfrom gnuradio import gr\nimport random\n\n\
       class blk(gr.sync_block):\n    \"\"\"Generate reference and received bits with\
+<<<<<<< HEAD
       \ variable error rate\"\"\"\n\n    def __init__(self, error_rate=0.10, pattern_len=50000):\n\
       \        gr.sync_block.__init__(\n            self,\n            name='BER Pattern\
       \ Generator',\n            in_sig=[],\n            out_sig=[np.uint8, np.uint8]\
@@ -192,6 +205,60 @@ blocks:
     coordinate: [48, 384.0]
     rotation: 0
     state: disabled
+=======
+      \ variable error rate\"\"\"\n\n    def __init__(self, error_rate=0.10, pattern_len=50000,\
+      \ regen_trigger=0):\n        gr.sync_block.__init__(\n            self,\n  \
+      \          name='BER Pattern Generator',\n            in_sig=None,\n       \
+      \     out_sig=[np.uint8, np.uint8]  # ref and rx outputs\n        )\n      \
+      \  self.error_rate = error_rate\n        self.pattern_len = pattern_len\n  \
+      \      self.index = 0\n        self.last_trigger = regen_trigger\n        self.need_regen\
+      \ = False\n        \n        # Generate initial pattern\n        self.regenerate_pattern()\n\
+      \    \n    def regenerate_pattern(self):\n        \"\"\"Generate new reference\
+      \ and received patterns\"\"\"\n        random.seed()  # Use current time as\
+      \ seed\n        \n        # Generate random reference bits\n        self.ref_bits\
+      \ = [random.randint(0, 1) for _ in range(self.pattern_len)]\n        \n    \
+      \    # Generate received bits with errors\n        self.rx_bits = []\n     \
+      \   for bit in self.ref_bits:\n            if random.random() < self.error_rate:\n\
+      \                # Inject error\n                self.rx_bits.append(1 - bit)\n\
+      \            else:\n                # No error\n                self.rx_bits.append(bit)\n\
+      \        \n        self.index = 0\n        self.need_regen = False\n       \
+      \ print(f\"Generated {self.pattern_len} bits with {self.error_rate*100:.3f}%\
+      \ error rate\")\n    \n    def set_error_rate(self, error_rate):\n        \"\
+      \"\"Update error rate and mark for regeneration\"\"\"\n        if abs(self.error_rate\
+      \ - error_rate) > 0.0001:  # Only regenerate if significant change\n       \
+      \     self.error_rate = error_rate\n            self.need_regen = True\n   \
+      \ \n    def set_regen_trigger(self, trigger):\n        \"\"\"Trigger pattern\
+      \ regeneration when button is pressed\"\"\"\n        if trigger == 1 and self.last_trigger\
+      \ == 0:  # Detect press (0->1 transition)\n            print(\"\\nButton pressed\
+      \ - marking for regeneration...\")\n            self.need_regen = True\n   \
+      \     self.last_trigger = trigger\n\n    def work(self, input_items, output_items):\n\
+      \        # Check if we need to regenerate before producing output\n        if\
+      \ self.need_regen:\n            print(\"Regenerating pattern in work()...\"\
+      )\n            self.regenerate_pattern()\n        \n        out_ref = output_items[0]\n\
+      \        out_rx = output_items[1]\n        \n        for i in range(len(out_ref)):\n\
+      \            out_ref[i] = self.ref_bits[self.index]\n            out_rx[i] =\
+      \ self.rx_bits[self.index]\n            self.index = (self.index + 1) % self.pattern_len\n\
+      \        \n        return len(out_ref)\n"
+    affinity: ''
+    alias: ''
+    comment: Generates synchronized ref and rx bits
+    error_rate: ber_percent / 100.0
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pattern_len: pattern_len
+    regen_trigger: regenerate_trigger
+  states:
+    _io_cache: ('BER Pattern Generator', 'blk', [('error_rate', '0.1'), ('pattern_len',
+      '50000'), ('regen_trigger', '0')], [], [('0', 'byte', 1), ('1', 'byte', 1)],
+      'Generate reference and received bits with variable error rate', ['error_rate',
+      'pattern_len'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 172.0]
+    rotation: 0
+    state: true
+>>>>>>> upstream/master
 - name: import_random
   id: import
   parameters:
@@ -202,7 +269,11 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
+<<<<<<< HEAD
     coordinate: [200, 100.0]
+=======
+    coordinate: [184, 84]
+>>>>>>> upstream/master
     rotation: 0
     state: true
 - name: ofdm_testbed_ber_0
@@ -219,6 +290,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
+<<<<<<< HEAD
     coordinate: [528, 304.0]
     rotation: 0
     state: true
@@ -237,6 +309,9 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [72, 224.0]
+=======
+    coordinate: [480, 352.0]
+>>>>>>> upstream/master
     rotation: 0
     state: true
 - name: qtgui_number_sink_0
@@ -279,7 +354,11 @@ blocks:
     label7: ''
     label8: ''
     label9: ''
+<<<<<<< HEAD
     max: '1'
+=======
+    max: '100'
+>>>>>>> upstream/master
     min: '0'
     name: '"Current BER"'
     nconnections: '1'
@@ -299,7 +378,11 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
+<<<<<<< HEAD
     coordinate: [984, 236.0]
+=======
+    coordinate: [744, 260.0]
+>>>>>>> upstream/master
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -396,11 +479,16 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
+<<<<<<< HEAD
     coordinate: [784, 356.0]
+=======
+    coordinate: [744, 420.0]
+>>>>>>> upstream/master
     rotation: 0
     state: true
 
 connections:
+<<<<<<< HEAD
 - [blocks_multiply_const_vxx_0, '0', qtgui_number_sink_0, '0']
 - [blocks_throttle_0, '0', ofdm_testbed_ber_0, '0']
 - [epy_block_0, '0', blocks_throttle_0, '0']
@@ -409,6 +497,13 @@ connections:
 - [ofdm_testbed_ber_0, '0', qtgui_time_sink_x_0, '0']
 - [ofdm_testbed_ber_pattern_generator_0, '0', blocks_throttle_0, '0']
 - [ofdm_testbed_ber_pattern_generator_0, '1', ofdm_testbed_ber_0, '1']
+=======
+- [blocks_throttle_0, '0', ofdm_testbed_ber_0, '0']
+- [epy_block_0, '0', blocks_throttle_0, '0']
+- [epy_block_0, '1', ofdm_testbed_ber_0, '1']
+- [ofdm_testbed_ber_0, '0', qtgui_number_sink_0, '0']
+- [ofdm_testbed_ber_0, '0', qtgui_time_sink_x_0, '0']
+>>>>>>> upstream/master
 
 metadata:
   file_format: 1
