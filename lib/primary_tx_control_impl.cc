@@ -75,11 +75,7 @@ namespace ofdm_testbed {
 
     void primary_tx_control_impl::forecast(int noutput_items, gr_vector_int &ninput_items_required)
     {
-        // FIX 2: forecast() cần khai báo đúng nhu cầu input.
-        // Cả hai input là optional (block có thể chạy kể cả khi không có ACK hay data mới),
-        // nhưng scheduler cần biết điều đó để không block vô thời hạn.
-        // Set = 0 là đúng ý định, nhưng chỉ có tác dụng khi TX loop KHÔNG bị lồng trong RX loop.
-        // Sau khi sửa FIX 3, TX loop chạy độc lập mỗi lần general_work được gọi.
+       
         ninput_items_required[0] = 0; // ACK: không bắt buộc phải có
         ninput_items_required[1] = 0; // Data: không bắt buộc phải có
     }
@@ -264,13 +260,9 @@ namespace ofdm_testbed {
                 }
                 } // end switch rx
             }
-        } // end while RX — FIX 3: đóng đúng tại đây, TRƯỚC vòng TX
+        } // end while RX 
 
-        // =========================================================
-        // VÒNG LẶP TX: phát output độc lập với vòng RX ở trên
-        // FIX 3 (tiếp): TX loop nằm NGOÀI RX loop, chạy đúng 1 lần
-        // mỗi lần general_work được gọi, produce tối đa noutput_items byte.
-        // =========================================================
+        
         while (no < noutput_items)
         {
             switch (d_tx_state)

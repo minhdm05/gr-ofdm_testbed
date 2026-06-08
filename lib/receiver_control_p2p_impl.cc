@@ -1,7 +1,5 @@
 /* -*- c++ -*- */
-/* Network Coding project at: Signals and Systems Laboratory, VNU-UET.
-   written by: Van-Ly Nguyen
-   email: lynguyenvan.uet@gmail.com 
+/* Network Coding project at: wireless communication Laboratory, VNU-UET.
    Adapted for gr-ofdm_testbed
 */
 
