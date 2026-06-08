@@ -79,14 +79,14 @@ class p2p(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 2.4e6
+        self.samp_rate = samp_rate = 2.2e6
         self.packet_len = packet_len = 50
         self.occupied_tones = occupied_tones = 48
         self.len_tag_key = len_tag_key = "packet_len"
         self.fft_len = fft_len = 64
         self.data_size = data_size = 1024
         self.cp_length = cp_length = 16
-        self.band_width = band_width = 2.7e6
+        self.band_width = band_width = 2.5e6
 
         ##################################################
         # Blocks
@@ -134,7 +134,7 @@ class p2p(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.tab_0_grid_layout_0.setColumnStretch(c, 1)
         self.osmosdr_source_0 = osmosdr.source(
-            args="numchan=" + str(1) + " " + 'bladerf=2a40,buffers=128,buflen=65536'
+            args="numchan=" + str(1) + " " + 'bladerf=2a40,buffers=256,buflen=65536'
         )
         self.osmosdr_source_0.set_time_unknown_pps(osmosdr.time_spec_t())
         self.osmosdr_source_0.set_sample_rate(samp_rate)
@@ -149,7 +149,7 @@ class p2p(gr.top_block, Qt.QWidget):
         self.osmosdr_source_0.set_antenna('', 0)
         self.osmosdr_source_0.set_bandwidth(band_width, 0)
         self.osmosdr_sink_0_0 = osmosdr.sink(
-            args="numchan=" + str(1) + " " + 'bladerf=2a40,buffers=128,buflen=65536'
+            args="numchan=" + str(1) + " " + 'bladerf=2a40,buffers=256,buflen=65536'
         )
         self.osmosdr_sink_0_0.set_time_unknown_pps(osmosdr.time_spec_t())
         self.osmosdr_sink_0_0.set_sample_rate(samp_rate)
@@ -162,9 +162,9 @@ class p2p(gr.top_block, Qt.QWidget):
         self.osmosdr_sink_0_0.set_bandwidth(band_width, 0)
         self.ofdm_testbed_zero_elimination_0 = ofdm_testbed.zero_elimination(170, 1024)
         self.ofdm_testbed_receiver_control_p2p_0 = ofdm_testbed.receiver_control_p2p(1024, 187, 170)
-        self.digital_ofdm_tx_0 = digital.ofdm_tx(
+        self.digital_ofdm_tx_0_0_0 = digital.ofdm_tx(
             fft_len=fft_len,
-            cp_len=cp_length,
+            cp_len=fft_len//4,
             packet_length_tag_key=len_tag_key,
             occupied_carriers=((-4,-3,-2,-1,1,2,3,4),),
             pilot_carriers=((-6,-5,5,6),),
@@ -176,7 +176,7 @@ class p2p(gr.top_block, Qt.QWidget):
             rolloff=0,
             debug_log=False,
             scramble_bits=False)
-        self.digital_ofdm_rx_0_0_0 = digital.ofdm_rx(
+        self.digital_ofdm_rx_0_0 = digital.ofdm_rx(
             fft_len=fft_len, cp_len=fft_len//4,
             frame_length_tag_key='frame_'+"rx_len",
             packet_length_tag_key="rx_len",
@@ -200,12 +200,12 @@ class p2p(gr.top_block, Qt.QWidget):
         # Connections
         ##################################################
         self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.osmosdr_sink_0_0, 0))
-        self.connect((self.blocks_stream_to_tagged_stream_0, 0), (self.digital_ofdm_tx_0, 0))
-        self.connect((self.dc_blocker_xx_0_0, 0), (self.digital_ofdm_rx_0_0_0, 0))
+        self.connect((self.blocks_stream_to_tagged_stream_0, 0), (self.digital_ofdm_tx_0_0_0, 0))
+        self.connect((self.dc_blocker_xx_0_0, 0), (self.digital_ofdm_rx_0_0, 0))
         self.connect((self.dc_blocker_xx_0_0, 0), (self.qtgui_sink_x_0, 0))
-        self.connect((self.digital_ofdm_rx_0_0_0, 0), (self.blocks_tag_debug_0, 0))
-        self.connect((self.digital_ofdm_rx_0_0_0, 0), (self.ofdm_testbed_receiver_control_p2p_0, 0))
-        self.connect((self.digital_ofdm_tx_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
+        self.connect((self.digital_ofdm_rx_0_0, 0), (self.blocks_tag_debug_0, 0))
+        self.connect((self.digital_ofdm_rx_0_0, 0), (self.ofdm_testbed_receiver_control_p2p_0, 0))
+        self.connect((self.digital_ofdm_tx_0_0_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
         self.connect((self.ofdm_testbed_receiver_control_p2p_0, 0), (self.blocks_stream_to_tagged_stream_0, 0))
         self.connect((self.ofdm_testbed_receiver_control_p2p_0, 1), (self.ofdm_testbed_zero_elimination_0, 0))
         self.connect((self.ofdm_testbed_zero_elimination_0, 0), (self.show_image_0, 1))

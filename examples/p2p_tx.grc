@@ -37,7 +37,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 2.7e6
+    value: 2.5e6
   states:
     bus_sink: false
     bus_source: false
@@ -145,7 +145,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 2.4e6
+    value: 2.2e6
   states:
     bus_sink: false
     bus_source: false
@@ -279,7 +279,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [712, 272.0]
+    coordinate: [728, 304.0]
     rotation: 0
     state: enabled
 - name: blocks_tag_debug_0
@@ -298,7 +298,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [712, 140.0]
+    coordinate: [752, 148.0]
     rotation: 0
     state: enabled
 - name: blocks_tag_debug_0_0
@@ -354,7 +354,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 244.0]
+    coordinate: [296, 244.0]
     rotation: 0
     state: enabled
 - name: dc_blocker_xx_0_0_0
@@ -375,7 +375,7 @@ blocks:
     coordinate: [384, 540.0]
     rotation: 0
     state: disabled
-- name: digital_ofdm_rx_0_0_0
+- name: digital_ofdm_rx_0
   id: digital_ofdm_rx
   parameters:
     affinity: ''
@@ -399,16 +399,16 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 140.0]
+    coordinate: [472, 188.0]
     rotation: 0
     state: enabled
-- name: digital_ofdm_tx_0
+- name: digital_ofdm_tx_0_0
   id: digital_ofdm_tx
   parameters:
     affinity: ''
     alias: ''
     comment: ''
-    cp_len: cp_length
+    cp_len: fft_len//4
     fft_len: fft_len
     header_mod: '"BPSK"'
     log: 'False'
@@ -427,7 +427,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [952, 244.0]
+    coordinate: [952, 268.0]
     rotation: 0
     state: enabled
 - name: ofdm_testbed_byte_to_bit_0
@@ -464,7 +464,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [168, 452.0]
+    coordinate: [136, 452.0]
     rotation: 0
     state: enabled
 - name: ofdm_testbed_primary_tx_control_0
@@ -559,7 +559,7 @@ blocks:
     ant7: ''
     ant8: ''
     ant9: ''
-    args: bladerf=ca4c,buffers=128,buflen=65536
+    args: bladerf=ca4c,buffers=256,buflen=65536
     bb_gain0: '20'
     bb_gain1: '20'
     bb_gain10: '20'
@@ -1081,7 +1081,7 @@ blocks:
     ant7: ''
     ant8: ''
     ant9: ''
-    args: bladerf=ca4c,buffers=128,buflen=65536
+    args: bladerf=ca4c,buffers=256,buflen=65536
     bb_gain0: '20'
     bb_gain1: '20'
     bb_gain10: '20'
@@ -1996,19 +1996,13 @@ connections:
 - [blocks_multiply_const_vxx_0_0, '0', blocks_throttle_0, '0']
 - [blocks_multiply_const_vxx_0_0, '0', osmosdr_sink_0_0, '0']
 - [blocks_multiply_const_vxx_0_0_0, '0', osmosdr_sink_0_0_0, '0']
-- [blocks_stream_to_tagged_stream_0, '0', digital_ofdm_tx_0, '0']
-- [blocks_stream_to_tagged_stream_0_0, '0', digital_ofdm_tx_0, '0']
+- [blocks_stream_to_tagged_stream_0_0, '0', digital_ofdm_tx_0_0, '0']
 - [blocks_stream_to_vector_1, '0', ofdm_testbed_primary_tx_control_0, '0']
-- [blocks_throttle_0, '0', digital_ofdm_rx_0_0_0, '0']
-- [dc_blocker_xx_0_0, '0', digital_ofdm_rx_0_0_0, '0']
-- [dc_blocker_xx_0_0_0, '0', digital_ofdm_rx_0_0_0, '0']
-- [digital_ofdm_rx_0_0_0, '0', blocks_stream_to_vector_1, '0']
-- [digital_ofdm_rx_0_0_0, '0', blocks_tag_debug_0, '0']
-- [digital_ofdm_rx_0_0_0, '0', blocks_tag_debug_0_0, '0']
-- [digital_ofdm_rx_0_0_0, '0', ofdm_testbed_receiver_control_p2p_0, '0']
-- [digital_ofdm_tx_0, '0', blocks_multiply_const_vxx_0_0, '0']
-- [digital_ofdm_tx_0, '0', blocks_multiply_const_vxx_0_0_0, '0']
-- [digital_ofdm_tx_0, '0', qtgui_freq_sink_x_0_0, '0']
+- [dc_blocker_xx_0_0, '0', digital_ofdm_rx_0, '0']
+- [digital_ofdm_rx_0, '0', blocks_stream_to_vector_1, '0']
+- [digital_ofdm_rx_0, '0', blocks_tag_debug_0, '0']
+- [digital_ofdm_tx_0_0, '0', blocks_multiply_const_vxx_0_0, '0']
+- [digital_ofdm_tx_0_0, '0', qtgui_freq_sink_x_0_0, '0']
 - [ofdm_testbed_byte_to_bit_0, '0', blocks_stream_to_tagged_stream_0_0, '0']
 - [ofdm_testbed_image_vector_source_0, '0', ofdm_testbed_primary_tx_control_0, '1']
 - [ofdm_testbed_primary_tx_control_0, '0', blocks_char_to_float_0, '0']

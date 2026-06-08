@@ -122,7 +122,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [864, 228.0]
+    coordinate: [800, 228.0]
     rotation: 0
     state: enabled
 - name: blocks_throttle_0
@@ -141,7 +141,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [400, 228.0]
+    coordinate: [368, 204.0]
     rotation: 0
     state: true
 - name: epy_block_0
@@ -189,7 +189,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [128, 488.0]
+    coordinate: [48, 384.0]
     rotation: 0
     state: disabled
 - name: import_random
@@ -219,7 +219,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 304.0]
+    coordinate: [528, 304.0]
     rotation: 0
     state: true
 - name: ofdm_testbed_ber_pattern_generator_0
@@ -236,7 +236,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [80, 232.0]
+    coordinate: [72, 224.0]
     rotation: 0
     state: true
 - name: qtgui_number_sink_0
@@ -299,7 +299,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1160, 228.0]
+    coordinate: [984, 236.0]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -396,7 +396,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [952, 396.0]
+    coordinate: [784, 356.0]
     rotation: 0
     state: true
 

@@ -79,13 +79,13 @@ class p2p_tx(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 2.4e6
+        self.samp_rate = samp_rate = 2.2e6
         self.packet_len = packet_len = 50
         self.occupied_tones = occupied_tones = 48
         self.len_tag_key = len_tag_key = "packet_len"
         self.fft_len = fft_len = 64
         self.cp_length = cp_length = 16
-        self.band_width = band_width = 2.7e6
+        self.band_width = band_width = 2.5e6
 
         ##################################################
         # Blocks
@@ -133,7 +133,7 @@ class p2p_tx(gr.top_block, Qt.QWidget):
         self._qtgui_freq_sink_x_0_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0_0.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_freq_sink_x_0_0_win)
         self.osmosdr_source_0 = osmosdr.source(
-            args="numchan=" + str(1) + " " + 'bladerf=ca4c,buffers=128,buflen=65536'
+            args="numchan=" + str(1) + " " + 'bladerf=ca4c,buffers=256,buflen=65536'
         )
         self.osmosdr_source_0.set_time_unknown_pps(osmosdr.time_spec_t())
         self.osmosdr_source_0.set_sample_rate(samp_rate)
@@ -148,7 +148,7 @@ class p2p_tx(gr.top_block, Qt.QWidget):
         self.osmosdr_source_0.set_antenna('', 0)
         self.osmosdr_source_0.set_bandwidth(band_width, 0)
         self.osmosdr_sink_0_0 = osmosdr.sink(
-            args="numchan=" + str(1) + " " + 'bladerf=ca4c,buffers=128,buflen=65536'
+            args="numchan=" + str(1) + " " + 'bladerf=ca4c,buffers=256,buflen=65536'
         )
         self.osmosdr_sink_0_0.set_time_unknown_pps(osmosdr.time_spec_t())
         self.osmosdr_sink_0_0.set_sample_rate(samp_rate)
@@ -161,9 +161,9 @@ class p2p_tx(gr.top_block, Qt.QWidget):
         self.osmosdr_sink_0_0.set_bandwidth(band_width, 0)
         self.ofdm_testbed_primary_tx_control_0 = ofdm_testbed.primary_tx_control(1024, 6, 187, 170, 6)
         self.ofdm_testbed_image_vector_source_0 = ofdm_testbed.image_vector_source('/home/minh/SDR_NC/2 Nodes/2_P2P_Img/lena_gray_512.txt', 512*512, 1024, False, 0, 1)
-        self.digital_ofdm_tx_0 = digital.ofdm_tx(
+        self.digital_ofdm_tx_0_0 = digital.ofdm_tx(
             fft_len=fft_len,
-            cp_len=cp_length,
+            cp_len=fft_len//4,
             packet_length_tag_key=len_tag_key,
             occupied_carriers=((-4,-3,-2,-1,1,2,3,4),),
             pilot_carriers=((-6,-5,5,6),),
@@ -175,7 +175,7 @@ class p2p_tx(gr.top_block, Qt.QWidget):
             rolloff=0,
             debug_log=False,
             scramble_bits=False)
-        self.digital_ofdm_rx_0_0_0 = digital.ofdm_rx(
+        self.digital_ofdm_rx_0 = digital.ofdm_rx(
             fft_len=fft_len, cp_len=fft_len//4,
             frame_length_tag_key='frame_'+"rx_len",
             packet_length_tag_key="rx_len",
@@ -201,13 +201,13 @@ class p2p_tx(gr.top_block, Qt.QWidget):
         # Connections
         ##################################################
         self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.osmosdr_sink_0_0, 0))
-        self.connect((self.blocks_stream_to_tagged_stream_0_0, 0), (self.digital_ofdm_tx_0, 0))
+        self.connect((self.blocks_stream_to_tagged_stream_0_0, 0), (self.digital_ofdm_tx_0_0, 0))
         self.connect((self.blocks_stream_to_vector_1, 0), (self.ofdm_testbed_primary_tx_control_0, 0))
-        self.connect((self.dc_blocker_xx_0_0, 0), (self.digital_ofdm_rx_0_0_0, 0))
-        self.connect((self.digital_ofdm_rx_0_0_0, 0), (self.blocks_stream_to_vector_1, 0))
-        self.connect((self.digital_ofdm_rx_0_0_0, 0), (self.blocks_tag_debug_0, 0))
-        self.connect((self.digital_ofdm_tx_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
-        self.connect((self.digital_ofdm_tx_0, 0), (self.qtgui_freq_sink_x_0_0, 0))
+        self.connect((self.dc_blocker_xx_0_0, 0), (self.digital_ofdm_rx_0, 0))
+        self.connect((self.digital_ofdm_rx_0, 0), (self.blocks_stream_to_vector_1, 0))
+        self.connect((self.digital_ofdm_rx_0, 0), (self.blocks_tag_debug_0, 0))
+        self.connect((self.digital_ofdm_tx_0_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
+        self.connect((self.digital_ofdm_tx_0_0, 0), (self.qtgui_freq_sink_x_0_0, 0))
         self.connect((self.ofdm_testbed_image_vector_source_0, 0), (self.ofdm_testbed_primary_tx_control_0, 1))
         self.connect((self.ofdm_testbed_primary_tx_control_0, 0), (self.blocks_stream_to_tagged_stream_0_0, 0))
         self.connect((self.osmosdr_source_0, 0), (self.dc_blocker_xx_0_0, 0))
