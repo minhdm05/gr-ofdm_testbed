@@ -26,9 +26,8 @@ class qa_ber_pattern_generator(gr_unittest.TestCase):
         self.tb = None
 
     def test_instance(self):
-        # FIXME: Test will fail until you pass sensible arguments to the constructor
-        instance = ber_pattern_generator()
-
+        instance = ber_pattern_generator(0.1, 1024)
+        self.assertIsNotNone(instance)
     def test_001_descriptive_test_name(self):
         # set up fg
         self.tb.run()
